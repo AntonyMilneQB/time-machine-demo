@@ -1,0 +1,289 @@
+2021-10-27 16:16:36,745 - kedro.pipeline.node - ERROR - Node `preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]` failed with error: 
+
+2021-10-27 16:35:34,804 - kedro.pipeline.node - ERROR - Node `preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]` failed with error: 
+
+2021-10-28 10:37:28,410 - kedro.pipeline.node - ERROR - Node `preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]` failed with error: 
+
+2021-10-28 10:39:09,053 - kedro.pipeline.node - ERROR - Node `preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]` failed with error: 
+
+2021-10-28 10:40:22,941 - kedro.pipeline.node - ERROR - Node `preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]` failed with error: 
+
+2021-10-28 10:53:52,816 - kedro.pipeline.node - ERROR - Node `preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]` failed with error: 
+
+2021-10-28 10:54:27,779 - kedro.pipeline.node - ERROR - Node `preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]` failed with error: 
+
+2021-10-28 10:55:13,618 - kedro.pipeline.node - ERROR - Node `preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]` failed with error: 
+
+2021-10-28 10:57:21,668 - kedro.pipeline.node - ERROR - Node `preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]` failed with error: 
+
+2021-10-28 12:01:14,989 - uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/uvicorn/protocols/http/httptools_impl.py", line 398, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/routing.py", line 52, in app
+    response = await func(request)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/fastapi/routing.py", line 217, in app
+    dependant=dependant, values=values, is_coroutine=is_coroutine
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/fastapi/routing.py", line 149, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/kedro_viz-4.0.0-py3.7.egg/kedro_viz/api/router.py", line 129, in get_single_pipeline_data
+    json_data = json.loads(Path(load_file).read_text())
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/pathlib.py", line 1221, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/pathlib.py", line 1208, in open
+    opener=self._opener)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/pathlib.py", line 1063, in _opener
+    return self._accessor.open(self, flags, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/antony_milne/kedro/mine/keep/spaceflights/data/pipelines/2021-10-28T10.45.19.218Z.json'
+2021-10-28 12:05:30,116 - strawberry.execution - ERROR - This anonymous operation must be the only defined operation.
+
+GraphQL request:31:1
+30 | #
+31 |
+   | ^
+32 | query {
+Stack (most recent call last):
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/bin/kedro", line 33, in <module>
+    sys.exit(load_entry_point('kedro==0.17.5', 'console_scripts', 'kedro')())
+  File "/Users/antony_milne/kedro/private-kedro/kedro/framework/cli/cli.py", line 266, in main
+    cli_collection()
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/Users/antony_milne/kedro/private-kedro/kedro/framework/cli/cli.py", line 216, in main
+    **extra,
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/kedro_viz-4.0.0-py3.7.egg/kedro_viz/launchers/cli.py", line 129, in viz
+    run_server(**run_server_kwargs)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/kedro_viz-4.0.0-py3.7.egg/kedro_viz/server.py", line 120, in run_server
+    uvicorn.run(app, host=host, port=port)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/uvicorn/main.py", line 386, in run
+    server.run()
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/uvicorn/server.py", line 49, in run
+    loop.run_until_complete(self.serve(sockets=sockets))
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/uvicorn/protocols/http/httptools_impl.py", line 398, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/asgi/__init__.py", line 347, in __call__
+    await self.handle_http(scope=scope, receive=receive, send=send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/asgi/__init__.py", line 246, in handle_http
+    context=context,
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/asgi/__init__.py", line 317, in get_http_response
+    root_value=root_value,
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/asgi/__init__.py", line 340, in execute
+    context_value=context,
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/schema/schema.py", line 155, in execute
+    self.process_errors(result.errors, execution_context=execution_context)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/schema/schema.py", line 125, in process_errors
+    logger.error(error, exc_info=error.original_error, **kwargs)
+2021-10-28 12:05:30,118 - strawberry.execution - ERROR - This anonymous operation must be the only defined operation.
+
+GraphQL request:42:1
+41 | }
+42 |
+   | ^
+43 | query {
+Stack (most recent call last):
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/bin/kedro", line 33, in <module>
+    sys.exit(load_entry_point('kedro==0.17.5', 'console_scripts', 'kedro')())
+  File "/Users/antony_milne/kedro/private-kedro/kedro/framework/cli/cli.py", line 266, in main
+    cli_collection()
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/Users/antony_milne/kedro/private-kedro/kedro/framework/cli/cli.py", line 216, in main
+    **extra,
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/kedro_viz-4.0.0-py3.7.egg/kedro_viz/launchers/cli.py", line 129, in viz
+    run_server(**run_server_kwargs)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/kedro_viz-4.0.0-py3.7.egg/kedro_viz/server.py", line 120, in run_server
+    uvicorn.run(app, host=host, port=port)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/uvicorn/main.py", line 386, in run
+    server.run()
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/uvicorn/server.py", line 49, in run
+    loop.run_until_complete(self.serve(sockets=sockets))
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/uvicorn/protocols/http/httptools_impl.py", line 398, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/asgi/__init__.py", line 347, in __call__
+    await self.handle_http(scope=scope, receive=receive, send=send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/asgi/__init__.py", line 246, in handle_http
+    context=context,
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/asgi/__init__.py", line 317, in get_http_response
+    root_value=root_value,
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/asgi/__init__.py", line 340, in execute
+    context_value=context,
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/schema/schema.py", line 155, in execute
+    self.process_errors(result.errors, execution_context=execution_context)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/schema/schema.py", line 125, in process_errors
+    logger.error(error, exc_info=error.original_error, **kwargs)
+2021-10-28 12:05:30,119 - strawberry.execution - ERROR - Field 'runsWithData' argument 'runIds' of type '[ID!]!' is required, but it was not provided.
+
+GraphQL request:44:3
+43 | query {
+44 |   runsWithData{
+   |   ^
+45 |     id
+Stack (most recent call last):
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/bin/kedro", line 33, in <module>
+    sys.exit(load_entry_point('kedro==0.17.5', 'console_scripts', 'kedro')())
+  File "/Users/antony_milne/kedro/private-kedro/kedro/framework/cli/cli.py", line 266, in main
+    cli_collection()
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/Users/antony_milne/kedro/private-kedro/kedro/framework/cli/cli.py", line 216, in main
+    **extra,
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/kedro_viz-4.0.0-py3.7.egg/kedro_viz/launchers/cli.py", line 129, in viz
+    run_server(**run_server_kwargs)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/kedro_viz-4.0.0-py3.7.egg/kedro_viz/server.py", line 120, in run_server
+    uvicorn.run(app, host=host, port=port)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/uvicorn/main.py", line 386, in run
+    server.run()
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/uvicorn/server.py", line 49, in run
+    loop.run_until_complete(self.serve(sockets=sockets))
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/uvicorn/protocols/http/httptools_impl.py", line 398, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/asgi/__init__.py", line 347, in __call__
+    await self.handle_http(scope=scope, receive=receive, send=send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/asgi/__init__.py", line 246, in handle_http
+    context=context,
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/asgi/__init__.py", line 317, in get_http_response
+    root_value=root_value,
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/asgi/__init__.py", line 340, in execute
+    context_value=context,
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/schema/schema.py", line 155, in execute
+    self.process_errors(result.errors, execution_context=execution_context)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/schema/schema.py", line 125, in process_errors
+    logger.error(error, exc_info=error.original_error, **kwargs)
+2021-10-28 12:06:48,388 - strawberry.execution - ERROR - 'NoneType' object has no attribute 'id'
+
+GraphQL request:33:3
+32 | query {
+33 |   runsWithData(runIds: ["-10-28T10.59.16.092Z.json"]){
+   |   ^
+34 |     id
+Traceback (most recent call last):
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/graphql/execution/execute.py", line 625, in await_result
+    return_type, field_nodes, info, path, await result
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/middleware.py", line 32, in resolve
+    result = await await_maybe(next_(root, info, **kwargs))
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/schema/schema_converter.py", line 389, in _resolver
+    return _get_result(_source, strawberry_info, **kwargs)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/schema/schema_converter.py", line 382, in _get_result
+    _source, info=info, args=field_args, kwargs=field_kwargs
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/field.py", line 271, in get_result
+    return self.base_resolver(*args, **kwargs)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/types/fields/resolver.py", line 39, in __call__
+    return self.wrapped_func(*args, **kwargs)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/kedro_viz-4.0.0-py3.7.egg/kedro_viz/api/graphql.py", line 196, in runs_with_data
+    run = get_run(run_id)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/kedro_viz-4.0.0-py3.7.egg/kedro_viz/api/graphql.py", line 92, in get_run
+    return format_run(run_data.id, json.loads(run_data.blob))
+AttributeError: 'NoneType' object has no attribute 'id'
+Stack (most recent call last):
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/bin/kedro", line 33, in <module>
+    sys.exit(load_entry_point('kedro==0.17.5', 'console_scripts', 'kedro')())
+  File "/Users/antony_milne/kedro/private-kedro/kedro/framework/cli/cli.py", line 266, in main
+    cli_collection()
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/Users/antony_milne/kedro/private-kedro/kedro/framework/cli/cli.py", line 216, in main
+    **extra,
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/kedro_viz-4.0.0-py3.7.egg/kedro_viz/launchers/cli.py", line 129, in viz
+    run_server(**run_server_kwargs)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/kedro_viz-4.0.0-py3.7.egg/kedro_viz/server.py", line 120, in run_server
+    uvicorn.run(app, host=host, port=port)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/uvicorn/main.py", line 386, in run
+    server.run()
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/uvicorn/server.py", line 49, in run
+    loop.run_until_complete(self.serve(sockets=sockets))
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/schema/schema.py", line 155, in execute
+    self.process_errors(result.errors, execution_context=execution_context)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/schema/schema.py", line 125, in process_errors
+    logger.error(error, exc_info=error.original_error, **kwargs)

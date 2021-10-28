@@ -1,0 +1,205 @@
+2021-10-27 14:30:24,710 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-27 14:30:24,728 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-27 14:30:27,730 - kedro.framework.session.store - INFO - `read()` not implemented for `BaseSessionStore`. Assuming empty store.
+2021-10-27 14:30:27,747 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-27 14:33:25,551 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-27 14:33:25,569 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-27 14:33:26,047 - kedro.framework.session.store - INFO - `read()` not implemented for `BaseSessionStore`. Assuming empty store.
+2021-10-27 14:33:26,065 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-27 14:33:49,236 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-27 14:33:49,254 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-27 14:33:49,681 - kedro.framework.session.store - INFO - `read()` not implemented for `BaseSessionStore`. Assuming empty store.
+2021-10-27 14:33:49,698 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-27 14:51:48,271 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-27 14:51:48,289 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-27 14:51:48,804 - kedro.framework.session.store - INFO - `read()` not implemented for `BaseSessionStore`. Assuming empty store.
+2021-10-27 14:51:48,824 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-27 14:56:07,649 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-27 14:56:07,666 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-27 14:56:08,106 - kedro.framework.session.store - INFO - `read()` not implemented for `BaseSessionStore`. Assuming empty store.
+2021-10-27 14:56:08,124 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-27 14:57:06,653 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-27 14:57:06,668 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-27 14:57:07,093 - kedro.framework.session.store - INFO - `read()` not implemented for `BaseSessionStore`. Assuming empty store.
+2021-10-27 14:57:07,111 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-27 14:57:27,782 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-27 14:57:27,800 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-27 14:57:28,259 - kedro.framework.session.store - INFO - `read()` not implemented for `BaseSessionStore`. Assuming empty store.
+2021-10-27 14:57:28,276 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-27 14:57:54,709 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-27 14:57:54,726 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-27 14:57:55,204 - kedro.framework.session.store - INFO - `read()` not implemented for `BaseSessionStore`. Assuming empty store.
+2021-10-27 14:57:55,221 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-27 14:59:44,071 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-27 14:59:44,089 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-27 14:59:44,594 - kedro.framework.session.store - INFO - `read()` not implemented for `BaseSessionStore`. Assuming empty store.
+2021-10-27 14:59:44,611 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-27 15:00:13,935 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-27 15:00:13,951 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-27 15:00:14,377 - kedro.framework.session.store - INFO - `read()` not implemented for `BaseSessionStore`. Assuming empty store.
+2021-10-27 15:00:14,395 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-27 15:17:16,437 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-27 15:17:16,454 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-27 15:17:16,906 - kedro.framework.session.store - INFO - `read()` not implemented for `BaseSessionStore`. Assuming empty store.
+2021-10-27 15:17:16,924 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-27 15:18:11,427 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-27 15:18:11,446 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-27 15:18:11,898 - kedro.framework.session.store - INFO - `read()` not implemented for `BaseSessionStore`. Assuming empty store.
+2021-10-27 15:18:11,915 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-27 15:21:01,977 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-27 15:21:01,995 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-27 15:21:02,443 - kedro.framework.session.store - INFO - `read()` not implemented for `BaseSessionStore`. Assuming empty store.
+2021-10-27 15:21:02,461 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-27 15:21:38,492 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-27 15:21:38,509 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-27 15:21:38,926 - kedro.framework.session.store - INFO - `read()` not implemented for `BaseSessionStore`. Assuming empty store.
+2021-10-27 15:21:38,943 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-27 15:22:27,082 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-27 15:22:27,099 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-27 15:22:27,528 - kedro.framework.session.store - INFO - `read()` not implemented for `BaseSessionStore`. Assuming empty store.
+2021-10-27 15:22:27,545 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-27 16:13:37,825 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-27 16:13:37,847 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-27 16:13:38,331 - kedro.framework.session.store - INFO - `read()` not implemented for `BaseSessionStore`. Assuming empty store.
+2021-10-27 16:13:38,351 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-27 16:14:29,932 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-27 16:14:29,955 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-27 16:14:30,416 - kedro.framework.session.store - INFO - `read()` not implemented for `BaseSessionStore`. Assuming empty store.
+2021-10-27 16:14:30,438 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-27 16:15:07,947 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-27 16:15:07,964 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-27 16:15:08,432 - kedro.framework.session.store - INFO - `read()` not implemented for `BaseSessionStore`. Assuming empty store.
+2021-10-27 16:15:08,449 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-27 16:16:35,629 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-27 16:16:35,647 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-27 16:16:36,111 - kedro.framework.session.store - INFO - `read()` not implemented for `BaseSessionStore`. Assuming empty store.
+2021-10-27 16:16:36,128 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-27 16:28:44,733 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-27 16:28:44,759 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-27 16:28:46,742 - kedro.framework.session.store - INFO - `read()` not implemented for `BaseSessionStore`. Assuming empty store.
+2021-10-27 16:28:46,776 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-27 16:33:12,181 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-27 16:33:12,198 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-27 16:33:15,095 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-27 16:33:15,305 - kedro.framework.session.store - INFO - `read()` not implemented for `BaseSessionStore`. Assuming empty store.
+2021-10-27 16:33:15,323 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-27 16:35:33,800 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-27 16:35:33,816 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-27 16:35:34,269 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-27 16:55:40,014 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-27 16:55:40,035 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-27 16:55:50,452 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-27 16:55:50,474 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-27 16:56:03,543 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-27 16:56:03,561 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-27 17:01:21,644 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-27 17:01:21,662 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-27 17:02:13,451 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-27 17:02:13,471 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-27 17:02:20,977 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-27 17:02:20,995 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-27 17:02:28,879 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-27 17:02:28,896 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-27 17:02:37,754 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-27 17:02:37,772 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 10:12:45,612 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 10:12:45,631 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 10:12:48,680 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 10:12:48,892 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-28 10:23:39,796 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 10:23:39,816 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 10:23:52,645 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 10:23:52,662 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 10:23:59,278 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 10:23:59,300 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 10:24:11,061 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 10:24:11,080 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 10:25:05,617 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 10:25:05,634 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 10:25:06,172 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-28 10:37:17,512 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 10:37:17,532 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 10:37:18,071 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-28 10:39:07,846 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 10:39:07,867 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 10:39:08,348 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-28 10:40:21,775 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 10:40:21,795 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 10:40:22,266 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-28 10:41:13,639 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 10:41:13,657 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 10:41:14,151 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-28 10:42:56,233 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 10:42:56,260 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 10:42:57,980 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-28 10:46:52,254 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 10:46:52,284 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 10:46:54,203 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-28 10:48:20,570 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 10:48:20,598 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 10:48:22,346 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-28 10:51:08,819 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 10:51:08,849 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 10:51:10,822 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-28 10:52:31,606 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 10:52:31,633 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 10:52:33,288 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-28 10:53:50,272 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 10:53:50,298 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 10:53:51,953 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-28 10:54:16,041 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 10:54:16,058 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 10:54:16,534 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-28 10:55:11,051 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 10:55:11,078 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 10:55:12,722 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-28 10:57:11,443 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 10:57:11,460 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 10:57:11,920 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-28 11:23:10,169 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 11:23:10,187 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 11:23:10,647 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-28 11:40:23,573 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 11:40:23,594 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 11:40:24,131 - kedro.framework.session.store - INFO - `read()` not implemented for `SQLiteStore`. Assuming empty store.
+2021-10-28 11:40:24,156 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-28 11:41:19,315 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 11:41:19,333 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 11:41:19,857 - kedro.framework.session.store - INFO - `read()` not implemented for `SQLiteStore`. Assuming empty store.
+2021-10-28 11:41:19,882 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-28 11:45:01,098 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 11:45:01,118 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 11:45:01,631 - kedro.framework.session.store - INFO - `read()` not implemented for `SQLiteStore`. Assuming empty store.
+2021-10-28 11:45:01,653 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-28 11:45:18,729 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 11:45:18,754 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 11:45:19,219 - kedro.framework.session.store - INFO - `read()` not implemented for `SQLiteStore`. Assuming empty store.
+2021-10-28 11:45:19,237 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-28 11:45:56,549 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 11:45:56,568 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 11:45:57,028 - kedro.framework.session.store - INFO - `read()` not implemented for `SQLiteStore`. Assuming empty store.
+2021-10-28 11:45:57,050 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-28 11:50:11,822 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 11:50:11,848 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 11:50:12,403 - kedro.framework.session.store - INFO - `read()` not implemented for `SQLiteStore`. Assuming empty store.
+2021-10-28 11:50:12,427 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-28 11:58:14,120 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 11:58:14,138 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 11:58:14,558 - kedro.framework.session.store - INFO - `read()` not implemented for `SQLiteStore`. Assuming empty store.
+2021-10-28 11:58:14,577 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-28 11:58:29,772 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 11:58:29,792 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 11:58:30,262 - kedro.framework.session.store - INFO - `read()` not implemented for `SQLiteStore`. Assuming empty store.
+2021-10-28 11:58:30,281 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-28 11:58:47,632 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 11:58:47,651 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 11:58:48,081 - kedro.framework.session.store - INFO - `read()` not implemented for `SQLiteStore`. Assuming empty store.
+2021-10-28 11:58:48,100 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-28 11:59:15,620 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 11:59:15,638 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 11:59:16,092 - kedro.framework.session.store - INFO - `read()` not implemented for `SQLiteStore`. Assuming empty store.
+2021-10-28 11:59:16,110 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights
+2021-10-28 11:59:50,149 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 11:59:50,168 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 11:59:50,612 - kedro.framework.session.store - INFO - `read()` not implemented for `SQLiteStore`. Assuming empty store.
+2021-10-28 11:59:50,629 - kedro.framework.session.session - WARNING - Unable to git describe /Users/antony_milne/kedro/mine/keep/spaceflights

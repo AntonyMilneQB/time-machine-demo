@@ -1,0 +1,184 @@
+{
+    "edges": [
+        {
+            "source": "acdb05cf",
+            "target": "c071dac9"
+        },
+        {
+            "source": "f1d596c2",
+            "target": "acdb05cf"
+        },
+        {
+            "source": "aed46479",
+            "target": "94112458"
+        },
+        {
+            "source": "94112458",
+            "target": "493ad53a"
+        }
+    ],
+    "layers": [
+        "models",
+        "primary",
+        "raw",
+        "intermediate"
+    ],
+    "modular_pipelines": {
+        "__root__": {
+            "children": [
+                {
+                    "id": "c071dac9",
+                    "type": "data"
+                },
+                {
+                    "id": "acdb05cf",
+                    "type": "task"
+                },
+                {
+                    "id": "493ad53a",
+                    "type": "data"
+                },
+                {
+                    "id": "f1d596c2",
+                    "type": "data"
+                },
+                {
+                    "id": "aed46479",
+                    "type": "data"
+                },
+                {
+                    "id": "94112458",
+                    "type": "task"
+                }
+            ],
+            "id": "__root__",
+            "inputs": [],
+            "name": "Root",
+            "outputs": []
+        }
+    },
+    "nodes": [
+        {
+            "full_name": "preprocess_companies_node",
+            "id": "94112458",
+            "modular_pipelines": [],
+            "name": "Preprocess Companies Node",
+            "parameters": {},
+            "pipelines": [
+                "__default__",
+                "dp"
+            ],
+            "tags": [
+                "balh",
+                "selected",
+                "completed"
+            ],
+            "type": "task"
+        },
+        {
+            "dataset_type": "kedro.extras.datasets.pandas.csv_dataset.CSVDataSet",
+            "full_name": "companies",
+            "id": "aed46479",
+            "layer": "raw",
+            "modular_pipelines": [],
+            "name": "Companies",
+            "pipelines": [
+                "__default__",
+                "dp"
+            ],
+            "tags": [
+                "balh"
+            ],
+            "type": "data"
+        },
+        {
+            "dataset_type": "kedro.extras.datasets.pandas.csv_dataset.CSVDataSet",
+            "full_name": "preprocessed_companies",
+            "id": "493ad53a",
+            "layer": "intermediate",
+            "modular_pipelines": [],
+            "name": "Preprocessed Companies",
+            "pipelines": [
+                "__default__",
+                "dp"
+            ],
+            "tags": [
+                "balh"
+            ],
+            "type": "data"
+        },
+        {
+            "full_name": "preprocess_shuttles_node",
+            "id": "acdb05cf",
+            "modular_pipelines": [],
+            "name": "Preprocess Shuttles Node",
+            "parameters": {},
+            "pipelines": [
+                "__default__",
+                "dp"
+            ],
+            "tags": [
+                "selected",
+                "completed"
+            ],
+            "type": "task"
+        },
+        {
+            "dataset_type": "kedro.extras.datasets.pandas.excel_dataset.ExcelDataSet",
+            "full_name": "shuttles",
+            "id": "f1d596c2",
+            "layer": "raw",
+            "modular_pipelines": [],
+            "name": "Shuttles",
+            "pipelines": [
+                "__default__",
+                "dp"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "dataset_type": "kedro.extras.datasets.pandas.csv_dataset.CSVDataSet",
+            "full_name": "preprocessed_shuttles",
+            "id": "c071dac9",
+            "layer": "intermediate",
+            "modular_pipelines": [],
+            "name": "Preprocessed Shuttles",
+            "pipelines": [
+                "__default__",
+                "dp"
+            ],
+            "tags": [],
+            "type": "data"
+        }
+    ],
+    "pipelines": [
+        {
+            "id": "__default__",
+            "name": "Default"
+        },
+        {
+            "id": "dp",
+            "name": "Dp"
+        },
+        {
+            "id": "ds",
+            "name": "Ds"
+        }
+    ],
+    "selected_pipeline": "__default__",
+    "tags": [
+        {
+            "id": "selected",
+            "name": "Selected"
+        },
+        {
+            "id": "completed",
+            "name": "Completed"
+        },
+        {
+            "id": "balh",
+            "name": "Balh"
+        }
+    ]
+}

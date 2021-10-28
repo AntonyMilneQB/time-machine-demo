@@ -1,0 +1,1293 @@
+2021-10-27 14:30:27,760 - root - INFO - ** Kedro project spaceflights
+2021-10-27 14:30:28,463 - kedro.framework.session.store - INFO - `save()` not implemented for `BaseSessionStore`. Skipping the step.
+2021-10-27 14:33:26,079 - root - INFO - ** Kedro project spaceflights
+2021-10-27 14:33:26,712 - kedro.framework.session.store - INFO - `save()` not implemented for `BaseSessionStore`. Skipping the step.
+2021-10-27 14:33:49,710 - root - INFO - ** Kedro project spaceflights
+2021-10-27 14:33:50,188 - kedro.io.data_catalog - INFO - Loading data from `shuttles` (ExcelDataSet)...
+2021-10-27 14:33:59,947 - kedro.pipeline.node - INFO - Running node: preprocess_shuttles_node: preprocess_shuttles([shuttles]) -> [preprocessed_shuttles]
+2021-10-27 14:34:00,070 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_shuttles` (CSVDataSet)...
+2021-10-27 14:34:00,532 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2021-10-27 14:34:00,533 - kedro.io.data_catalog - INFO - Loading data from `companies` (CSVDataSet)...
+2021-10-27 14:34:00,569 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2021-10-27 14:34:00,601 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_companies` (CSVDataSet)...
+2021-10-27 14:34:00,809 - kedro.runner.sequential_runner - INFO - Completed 2 out of 6 tasks
+2021-10-27 14:34:00,810 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_shuttles` (CSVDataSet)...
+2021-10-27 14:34:00,904 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_companies` (CSVDataSet)...
+2021-10-27 14:34:00,936 - kedro.io.data_catalog - INFO - Loading data from `reviews` (CSVDataSet)...
+2021-10-27 14:34:01,005 - kedro.pipeline.node - INFO - Running node: create_model_input_table_node: create_model_input_table([preprocessed_companies,preprocessed_shuttles,reviews]) -> [model_input_table]
+2021-10-27 14:34:02,821 - kedro.io.data_catalog - INFO - Saving data to `model_input_table` (CSVDataSet)...
+2021-10-27 14:34:11,695 - kedro.runner.sequential_runner - INFO - Completed 3 out of 6 tasks
+2021-10-27 14:34:11,696 - kedro.io.data_catalog - INFO - Loading data from `model_input_table` (CSVDataSet)...
+2021-10-27 14:34:13,648 - kedro.io.data_catalog - INFO - Loading data from `parameters` (MemoryDataSet)...
+2021-10-27 14:34:13,649 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([model_input_table,parameters]) -> [X_test,X_train,y_test,y_train]
+2021-10-27 14:34:13,774 - kedro.io.data_catalog - INFO - Saving data to `X_train` (MemoryDataSet)...
+2021-10-27 14:34:13,779 - kedro.io.data_catalog - INFO - Saving data to `X_test` (MemoryDataSet)...
+2021-10-27 14:34:13,780 - kedro.io.data_catalog - INFO - Saving data to `y_train` (MemoryDataSet)...
+2021-10-27 14:34:13,782 - kedro.io.data_catalog - INFO - Saving data to `y_test` (MemoryDataSet)...
+2021-10-27 14:34:13,811 - kedro.runner.sequential_runner - INFO - Completed 4 out of 6 tasks
+2021-10-27 14:34:13,811 - kedro.io.data_catalog - INFO - Loading data from `X_train` (MemoryDataSet)...
+2021-10-27 14:34:13,816 - kedro.io.data_catalog - INFO - Loading data from `y_train` (MemoryDataSet)...
+2021-10-27 14:34:13,818 - kedro.pipeline.node - INFO - Running node: train_model_node: train_model([X_train,y_train]) -> [regressor]
+2021-10-27 14:34:14,256 - kedro.io.data_catalog - INFO - Saving data to `regressor` (PickleDataSet)...
+2021-10-27 14:34:14,265 - kedro.runner.sequential_runner - INFO - Completed 5 out of 6 tasks
+2021-10-27 14:34:14,265 - kedro.io.data_catalog - INFO - Loading data from `regressor` (PickleDataSet)...
+2021-10-27 14:34:14,266 - kedro.io.data_catalog - INFO - Loading data from `X_test` (MemoryDataSet)...
+2021-10-27 14:34:14,267 - kedro.io.data_catalog - INFO - Loading data from `y_test` (MemoryDataSet)...
+2021-10-27 14:34:14,268 - kedro.pipeline.node - INFO - Running node: evaluate_model_node: evaluate_model([X_test,regressor,y_test]) -> None
+2021-10-27 14:34:14,361 - spaceflights.pipelines.data_science.nodes - INFO - Model has a coefficient R^2 of 0.462 on test data.
+2021-10-27 14:34:14,363 - kedro.runner.sequential_runner - INFO - Completed 6 out of 6 tasks
+2021-10-27 14:34:14,363 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2021-10-27 14:34:14,363 - kedro.framework.session.store - INFO - `save()` not implemented for `BaseSessionStore`. Skipping the step.
+2021-10-27 14:51:48,837 - root - INFO - ** Kedro project spaceflights
+2021-10-27 14:51:49,489 - kedro.io.data_catalog - INFO - Loading data from `shuttles` (ExcelDataSet)...
+2021-10-27 14:51:59,380 - kedro.pipeline.node - INFO - Running node: preprocess_shuttles_node: preprocess_shuttles([shuttles]) -> [preprocessed_shuttles]
+2021-10-27 14:51:59,472 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_shuttles` (CSVDataSet)...
+2021-10-27 14:51:59,924 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2021-10-27 14:51:59,925 - kedro.io.data_catalog - INFO - Loading data from `companies` (CSVDataSet)...
+2021-10-27 14:51:59,960 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2021-10-27 14:51:59,994 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_companies` (CSVDataSet)...
+2021-10-27 14:52:00,228 - kedro.runner.sequential_runner - INFO - Completed 2 out of 6 tasks
+2021-10-27 14:52:00,228 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_shuttles` (CSVDataSet)...
+2021-10-27 14:52:00,331 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_companies` (CSVDataSet)...
+2021-10-27 14:52:00,367 - kedro.io.data_catalog - INFO - Loading data from `reviews` (CSVDataSet)...
+2021-10-27 14:52:00,434 - kedro.pipeline.node - INFO - Running node: create_model_input_table_node: create_model_input_table([preprocessed_companies,preprocessed_shuttles,reviews]) -> [model_input_table]
+2021-10-27 14:52:02,514 - kedro.io.data_catalog - INFO - Saving data to `model_input_table` (CSVDataSet)...
+2021-10-27 14:52:11,967 - kedro.runner.sequential_runner - INFO - Completed 3 out of 6 tasks
+2021-10-27 14:52:11,968 - kedro.io.data_catalog - INFO - Loading data from `model_input_table` (CSVDataSet)...
+2021-10-27 14:52:13,934 - kedro.io.data_catalog - INFO - Loading data from `parameters` (MemoryDataSet)...
+2021-10-27 14:52:13,934 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([model_input_table,parameters]) -> [X_test,X_train,y_test,y_train]
+2021-10-27 14:52:14,058 - kedro.io.data_catalog - INFO - Saving data to `X_train` (MemoryDataSet)...
+2021-10-27 14:52:14,064 - kedro.io.data_catalog - INFO - Saving data to `X_test` (MemoryDataSet)...
+2021-10-27 14:52:14,066 - kedro.io.data_catalog - INFO - Saving data to `y_train` (MemoryDataSet)...
+2021-10-27 14:52:14,067 - kedro.io.data_catalog - INFO - Saving data to `y_test` (MemoryDataSet)...
+2021-10-27 14:52:14,096 - kedro.runner.sequential_runner - INFO - Completed 4 out of 6 tasks
+2021-10-27 14:52:14,097 - kedro.io.data_catalog - INFO - Loading data from `X_train` (MemoryDataSet)...
+2021-10-27 14:52:14,103 - kedro.io.data_catalog - INFO - Loading data from `y_train` (MemoryDataSet)...
+2021-10-27 14:52:14,104 - kedro.pipeline.node - INFO - Running node: train_model_node: train_model([X_train,y_train]) -> [regressor]
+2021-10-27 14:52:14,533 - kedro.io.data_catalog - INFO - Saving data to `regressor` (PickleDataSet)...
+2021-10-27 14:52:14,540 - kedro.runner.sequential_runner - INFO - Completed 5 out of 6 tasks
+2021-10-27 14:52:14,541 - kedro.io.data_catalog - INFO - Loading data from `regressor` (PickleDataSet)...
+2021-10-27 14:52:14,541 - kedro.io.data_catalog - INFO - Loading data from `X_test` (MemoryDataSet)...
+2021-10-27 14:52:14,542 - kedro.io.data_catalog - INFO - Loading data from `y_test` (MemoryDataSet)...
+2021-10-27 14:52:14,543 - kedro.pipeline.node - INFO - Running node: evaluate_model_node: evaluate_model([X_test,regressor,y_test]) -> None
+2021-10-27 14:52:14,632 - spaceflights.pipelines.data_science.nodes - INFO - Model has a coefficient R^2 of 0.462 on test data.
+2021-10-27 14:52:14,634 - kedro.runner.sequential_runner - INFO - Completed 6 out of 6 tasks
+2021-10-27 14:52:14,634 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2021-10-27 14:52:14,634 - kedro.framework.session.store - INFO - `save()` not implemented for `BaseSessionStore`. Skipping the step.
+2021-10-27 14:56:08,139 - root - INFO - ** Kedro project spaceflights
+2021-10-27 14:56:08,753 - kedro.io.data_catalog - INFO - Loading data from `companies` (CSVDataSet)...
+2021-10-27 14:56:08,792 - kedro.runner.sequential_runner - WARNING - There are 6 nodes that have not run.
+You can resume the pipeline run by adding the following argument to your previous command:
+
+2021-10-27 14:56:08,797 - kedro.framework.session.store - INFO - `save()` not implemented for `BaseSessionStore`. Skipping the step.
+2021-10-27 14:57:07,123 - root - INFO - ** Kedro project spaceflights
+2021-10-27 14:57:07,570 - kedro.framework.session.store - INFO - `save()` not implemented for `BaseSessionStore`. Skipping the step.
+2021-10-27 14:57:28,290 - root - INFO - ** Kedro project spaceflights
+2021-10-27 14:57:28,741 - kedro.framework.session.store - INFO - `save()` not implemented for `BaseSessionStore`. Skipping the step.
+2021-10-27 14:57:55,233 - root - INFO - ** Kedro project spaceflights
+2021-10-27 14:57:55,717 - kedro.io.data_catalog - INFO - Loading data from `companies` (CSVDataSet)...
+2021-10-27 14:57:55,756 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2021-10-27 14:57:55,787 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_companies` (CSVDataSet)...
+2021-10-27 14:57:56,001 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2021-10-27 14:57:56,002 - kedro.io.data_catalog - INFO - Loading data from `shuttles` (ExcelDataSet)...
+2021-10-27 14:58:06,229 - kedro.pipeline.node - INFO - Running node: preprocess_shuttles_node: preprocess_shuttles([shuttles]) -> [preprocessed_shuttles]
+2021-10-27 14:58:06,316 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_shuttles` (CSVDataSet)...
+2021-10-27 14:58:06,758 - kedro.runner.sequential_runner - INFO - Completed 2 out of 6 tasks
+2021-10-27 14:58:06,758 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_shuttles` (CSVDataSet)...
+2021-10-27 14:58:06,863 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_companies` (CSVDataSet)...
+2021-10-27 14:58:06,901 - kedro.io.data_catalog - INFO - Loading data from `reviews` (CSVDataSet)...
+2021-10-27 14:58:06,982 - kedro.pipeline.node - INFO - Running node: create_model_input_table_node: create_model_input_table([preprocessed_companies,preprocessed_shuttles,reviews]) -> [model_input_table]
+2021-10-27 14:58:08,687 - kedro.framework.session.store - INFO - `save()` not implemented for `BaseSessionStore`. Skipping the step.
+2021-10-27 14:59:44,625 - root - INFO - ** Kedro project spaceflights
+2021-10-27 14:59:45,236 - kedro.io.data_catalog - INFO - Loading data from `shuttles` (ExcelDataSet)...
+2021-10-27 14:59:54,523 - kedro.runner.sequential_runner - WARNING - There are 6 nodes that have not run.
+You can resume the pipeline run by adding the following argument to your previous command:
+
+2021-10-27 14:59:54,526 - kedro.framework.session.store - INFO - `save()` not implemented for `BaseSessionStore`. Skipping the step.
+2021-10-27 15:00:14,407 - root - INFO - ** Kedro project spaceflights
+2021-10-27 15:00:14,865 - kedro.io.data_catalog - INFO - Loading data from `shuttles` (ExcelDataSet)...
+2021-10-27 15:00:23,602 - kedro.runner.sequential_runner - WARNING - There are 6 nodes that have not run.
+You can resume the pipeline run by adding the following argument to your previous command:
+
+2021-10-27 15:00:23,604 - kedro.framework.session.store - INFO - `save()` not implemented for `BaseSessionStore`. Skipping the step.
+2021-10-27 15:17:16,937 - root - INFO - ** Kedro project spaceflights
+2021-10-27 15:17:17,589 - kedro.framework.session.store - INFO - `save()` not implemented for `BaseSessionStore`. Skipping the step.
+2021-10-27 15:18:11,928 - root - INFO - ** Kedro project spaceflights
+2021-10-27 15:18:12,548 - kedro.io.data_catalog - INFO - Loading data from `shuttles` (ExcelDataSet)...
+2021-10-27 15:18:21,774 - kedro.pipeline.node - INFO - Running node: preprocess_shuttles_node: preprocess_shuttles([shuttles]) -> [preprocessed_shuttles]
+2021-10-27 15:18:21,865 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_shuttles` (CSVDataSet)...
+2021-10-27 15:18:22,282 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2021-10-27 15:18:22,282 - kedro.io.data_catalog - INFO - Loading data from `companies` (CSVDataSet)...
+2021-10-27 15:18:22,316 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2021-10-27 15:18:22,347 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_companies` (CSVDataSet)...
+2021-10-27 15:18:22,556 - kedro.runner.sequential_runner - INFO - Completed 2 out of 6 tasks
+2021-10-27 15:18:22,556 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_shuttles` (CSVDataSet)...
+2021-10-27 15:18:22,656 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_companies` (CSVDataSet)...
+2021-10-27 15:18:22,689 - kedro.io.data_catalog - INFO - Loading data from `reviews` (CSVDataSet)...
+2021-10-27 15:18:22,758 - kedro.pipeline.node - INFO - Running node: create_model_input_table_node: create_model_input_table([preprocessed_companies,preprocessed_shuttles,reviews]) -> [model_input_table]
+2021-10-27 15:18:24,555 - kedro.io.data_catalog - INFO - Saving data to `model_input_table` (CSVDataSet)...
+2021-10-27 15:18:33,787 - kedro.runner.sequential_runner - INFO - Completed 3 out of 6 tasks
+2021-10-27 15:18:33,787 - kedro.io.data_catalog - INFO - Loading data from `model_input_table` (CSVDataSet)...
+2021-10-27 15:18:35,276 - kedro.framework.session.store - INFO - `save()` not implemented for `BaseSessionStore`. Skipping the step.
+2021-10-27 15:21:02,474 - root - INFO - ** Kedro project spaceflights
+2021-10-27 15:21:03,098 - kedro.io.data_catalog - INFO - Loading data from `companies` (CSVDataSet)...
+2021-10-27 15:21:03,131 - kedro.runner.sequential_runner - WARNING - There are 6 nodes that have not run.
+You can resume the pipeline run by adding the following argument to your previous command:
+
+2021-10-27 15:21:03,137 - kedro.framework.session.store - INFO - `save()` not implemented for `BaseSessionStore`. Skipping the step.
+2021-10-27 15:21:38,956 - root - INFO - ** Kedro project spaceflights
+2021-10-27 15:21:39,435 - kedro.io.data_catalog - INFO - Loading data from `companies` (CSVDataSet)...
+2021-10-27 15:21:39,467 - kedro.runner.sequential_runner - WARNING - There are 6 nodes that have not run.
+You can resume the pipeline run by adding the following argument to your previous command:
+
+2021-10-27 15:21:39,469 - kedro.framework.session.store - INFO - `save()` not implemented for `BaseSessionStore`. Skipping the step.
+2021-10-27 15:22:27,556 - root - INFO - ** Kedro project spaceflights
+2021-10-27 15:22:28,037 - kedro.io.data_catalog - INFO - Loading data from `companies` (CSVDataSet)...
+2021-10-27 15:22:28,073 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2021-10-27 15:22:28,105 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_companies` (CSVDataSet)...
+2021-10-27 15:22:28,311 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2021-10-27 15:22:28,311 - kedro.io.data_catalog - INFO - Loading data from `shuttles` (ExcelDataSet)...
+2021-10-27 15:22:37,111 - kedro.pipeline.node - INFO - Running node: preprocess_shuttles_node: preprocess_shuttles([shuttles]) -> [preprocessed_shuttles]
+2021-10-27 15:22:37,191 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_shuttles` (CSVDataSet)...
+2021-10-27 15:22:37,584 - kedro.runner.sequential_runner - INFO - Completed 2 out of 6 tasks
+2021-10-27 15:22:37,584 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_shuttles` (CSVDataSet)...
+2021-10-27 15:22:37,679 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_companies` (CSVDataSet)...
+2021-10-27 15:22:37,712 - kedro.io.data_catalog - INFO - Loading data from `reviews` (CSVDataSet)...
+2021-10-27 15:22:37,776 - kedro.pipeline.node - INFO - Running node: create_model_input_table_node: create_model_input_table([preprocessed_companies,preprocessed_shuttles,reviews]) -> [model_input_table]
+2021-10-27 15:22:39,479 - kedro.io.data_catalog - INFO - Saving data to `model_input_table` (CSVDataSet)...
+2021-10-27 15:22:47,794 - kedro.runner.sequential_runner - INFO - Completed 3 out of 6 tasks
+2021-10-27 15:22:47,794 - kedro.io.data_catalog - INFO - Loading data from `model_input_table` (CSVDataSet)...
+2021-10-27 15:22:48,248 - kedro.framework.session.store - INFO - `save()` not implemented for `BaseSessionStore`. Skipping the step.
+2021-10-27 16:13:38,366 - root - INFO - ** Kedro project spaceflights
+2021-10-27 16:13:39,073 - kedro.io.data_catalog - INFO - Loading data from `companies` (CSVDataSet)...
+2021-10-27 16:13:39,112 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2021-10-27 16:13:39,149 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_companies` (CSVDataSet)...
+2021-10-27 16:13:39,386 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2021-10-27 16:13:39,387 - kedro.io.data_catalog - INFO - Loading data from `shuttles` (ExcelDataSet)...
+2021-10-27 16:13:49,571 - kedro.pipeline.node - INFO - Running node: preprocess_shuttles_node: preprocess_shuttles([shuttles]) -> [preprocessed_shuttles]
+2021-10-27 16:13:49,667 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_shuttles` (CSVDataSet)...
+2021-10-27 16:13:50,122 - kedro.runner.sequential_runner - INFO - Completed 2 out of 6 tasks
+2021-10-27 16:13:50,122 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_shuttles` (CSVDataSet)...
+2021-10-27 16:13:50,220 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_companies` (CSVDataSet)...
+2021-10-27 16:13:50,256 - kedro.io.data_catalog - INFO - Loading data from `reviews` (CSVDataSet)...
+2021-10-27 16:13:50,322 - kedro.pipeline.node - INFO - Running node: create_model_input_table_node: create_model_input_table([preprocessed_companies,preprocessed_shuttles,reviews]) -> [model_input_table]
+2021-10-27 16:13:52,278 - kedro.io.data_catalog - INFO - Saving data to `model_input_table` (CSVDataSet)...
+2021-10-27 16:13:59,402 - kedro.framework.session.store - INFO - `save()` not implemented for `BaseSessionStore`. Skipping the step.
+2021-10-27 16:14:30,453 - root - INFO - ** Kedro project spaceflights
+2021-10-27 16:14:31,080 - kedro.io.data_catalog - INFO - Loading data from `companies` (CSVDataSet)...
+2021-10-27 16:14:31,114 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2021-10-27 16:14:31,148 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_companies` (CSVDataSet)...
+2021-10-27 16:14:31,394 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2021-10-27 16:14:31,394 - kedro.io.data_catalog - INFO - Loading data from `shuttles` (ExcelDataSet)...
+2021-10-27 16:14:41,484 - kedro.pipeline.node - INFO - Running node: preprocess_shuttles_node: preprocess_shuttles([shuttles]) -> [preprocessed_shuttles]
+2021-10-27 16:14:41,580 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_shuttles` (CSVDataSet)...
+2021-10-27 16:14:41,997 - kedro.runner.sequential_runner - INFO - Completed 2 out of 6 tasks
+2021-10-27 16:14:41,997 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_shuttles` (CSVDataSet)...
+2021-10-27 16:14:42,098 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_companies` (CSVDataSet)...
+2021-10-27 16:14:42,130 - kedro.io.data_catalog - INFO - Loading data from `reviews` (CSVDataSet)...
+2021-10-27 16:14:42,198 - kedro.pipeline.node - INFO - Running node: create_model_input_table_node: create_model_input_table([preprocessed_companies,preprocessed_shuttles,reviews]) -> [model_input_table]
+2021-10-27 16:14:44,021 - kedro.io.data_catalog - INFO - Saving data to `model_input_table` (CSVDataSet)...
+2021-10-27 16:14:52,846 - kedro.runner.sequential_runner - INFO - Completed 3 out of 6 tasks
+2021-10-27 16:14:52,846 - kedro.io.data_catalog - INFO - Loading data from `model_input_table` (CSVDataSet)...
+2021-10-27 16:14:54,867 - kedro.io.data_catalog - INFO - Loading data from `parameters` (MemoryDataSet)...
+2021-10-27 16:14:54,868 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([model_input_table,parameters]) -> [X_test,X_train,y_test,y_train]
+2021-10-27 16:14:54,980 - kedro.io.data_catalog - INFO - Saving data to `X_train` (MemoryDataSet)...
+2021-10-27 16:14:54,985 - kedro.io.data_catalog - INFO - Saving data to `X_test` (MemoryDataSet)...
+2021-10-27 16:14:54,986 - kedro.io.data_catalog - INFO - Saving data to `y_train` (MemoryDataSet)...
+2021-10-27 16:14:54,987 - kedro.io.data_catalog - INFO - Saving data to `y_test` (MemoryDataSet)...
+2021-10-27 16:14:55,016 - kedro.runner.sequential_runner - INFO - Completed 4 out of 6 tasks
+2021-10-27 16:14:55,016 - kedro.io.data_catalog - INFO - Loading data from `X_train` (MemoryDataSet)...
+2021-10-27 16:14:55,022 - kedro.io.data_catalog - INFO - Loading data from `y_train` (MemoryDataSet)...
+2021-10-27 16:14:55,026 - kedro.pipeline.node - INFO - Running node: train_model_node: train_model([X_train,y_train]) -> [regressor]
+2021-10-27 16:14:55,439 - kedro.io.data_catalog - INFO - Saving data to `regressor` (PickleDataSet)...
+2021-10-27 16:14:55,448 - kedro.runner.sequential_runner - INFO - Completed 5 out of 6 tasks
+2021-10-27 16:14:55,448 - kedro.io.data_catalog - INFO - Loading data from `regressor` (PickleDataSet)...
+2021-10-27 16:14:55,449 - kedro.io.data_catalog - INFO - Loading data from `X_test` (MemoryDataSet)...
+2021-10-27 16:14:55,450 - kedro.io.data_catalog - INFO - Loading data from `y_test` (MemoryDataSet)...
+2021-10-27 16:14:55,452 - kedro.pipeline.node - INFO - Running node: evaluate_model_node: evaluate_model([X_test,regressor,y_test]) -> None
+2021-10-27 16:14:55,540 - spaceflights.pipelines.data_science.nodes - INFO - Model has a coefficient R^2 of 0.462 on test data.
+2021-10-27 16:14:55,544 - kedro.runner.sequential_runner - INFO - Completed 6 out of 6 tasks
+2021-10-27 16:14:55,544 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2021-10-27 16:14:55,545 - kedro.framework.session.store - INFO - `save()` not implemented for `BaseSessionStore`. Skipping the step.
+2021-10-27 16:15:08,462 - root - INFO - ** Kedro project spaceflights
+2021-10-27 16:15:09,102 - kedro.io.data_catalog - INFO - Loading data from `shuttles` (ExcelDataSet)...
+2021-10-27 16:15:17,874 - kedro.pipeline.node - INFO - Running node: preprocess_shuttles_node: preprocess_shuttles([shuttles]) -> [preprocessed_shuttles]
+2021-10-27 16:15:17,954 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_shuttles` (CSVDataSet)...
+2021-10-27 16:15:18,340 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2021-10-27 16:15:18,340 - kedro.io.data_catalog - INFO - Loading data from `companies` (CSVDataSet)...
+2021-10-27 16:15:18,376 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2021-10-27 16:15:18,407 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_companies` (CSVDataSet)...
+2021-10-27 16:15:18,611 - kedro.runner.sequential_runner - INFO - Completed 2 out of 6 tasks
+2021-10-27 16:15:18,612 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_shuttles` (CSVDataSet)...
+2021-10-27 16:15:18,704 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_companies` (CSVDataSet)...
+2021-10-27 16:15:18,737 - kedro.io.data_catalog - INFO - Loading data from `reviews` (CSVDataSet)...
+2021-10-27 16:15:18,799 - kedro.pipeline.node - INFO - Running node: create_model_input_table_node: create_model_input_table([preprocessed_companies,preprocessed_shuttles,reviews]) -> [model_input_table]
+2021-10-27 16:15:30,124 - kedro.framework.session.store - INFO - `save()` not implemented for `BaseSessionStore`. Skipping the step.
+2021-10-27 16:16:36,180 - root - INFO - ** Kedro project spaceflights
+2021-10-27 16:16:36,709 - kedro.io.data_catalog - INFO - Loading data from `companies` (CSVDataSet)...
+2021-10-27 16:16:36,744 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2021-10-27 16:16:36,745 - kedro.pipeline.node - ERROR - Node `preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]` failed with error: 
+
+2021-10-27 16:16:36,746 - kedro.runner.sequential_runner - WARNING - There are 6 nodes that have not run.
+You can resume the pipeline run by adding the following argument to your previous command:
+
+2021-10-27 16:16:36,747 - kedro.framework.session.store - INFO - `save()` not implemented for `BaseSessionStore`. Skipping the step.
+2021-10-27 16:28:46,802 - root - INFO - ** Kedro project spaceflights
+2021-10-27 16:33:15,387 - root - INFO - ** Kedro project spaceflights
+2021-10-27 16:33:15,387 - root - INFO - Defined global variable `context`, `session` and `catalog`
+2021-10-27 16:33:15,967 - root - INFO - Registered line magic `run_viz`
+2021-10-27 16:35:34,281 - root - INFO - ** Kedro project spaceflights
+2021-10-27 16:35:34,771 - kedro.io.data_catalog - INFO - Loading data from `companies` (CSVDataSet)...
+2021-10-27 16:35:34,804 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2021-10-27 16:35:34,804 - kedro.pipeline.node - ERROR - Node `preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]` failed with error: 
+
+2021-10-27 16:35:34,806 - kedro.runner.sequential_runner - WARNING - There are 6 nodes that have not run.
+You can resume the pipeline run by adding the following argument to your previous command:
+
+2021-10-28 10:12:48,968 - root - INFO - ** Kedro project spaceflights
+2021-10-28 10:12:48,968 - root - INFO - Defined global variable `context`, `session` and `catalog`
+2021-10-28 10:12:49,501 - root - INFO - Registered line magic `run_viz`
+2021-10-28 10:25:07,314 - uvicorn.error - INFO - Started server process [66640]
+2021-10-28 10:25:07,315 - uvicorn.error - INFO - Waiting for application startup.
+2021-10-28 10:25:07,316 - uvicorn.error - INFO - Application startup complete.
+2021-10-28 10:25:07,317 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:4141 (Press CTRL+C to quit)
+2021-10-28 10:25:14,202 - uvicorn.error - INFO - Shutting down
+2021-10-28 10:25:14,308 - uvicorn.error - INFO - Waiting for application shutdown.
+2021-10-28 10:25:14,308 - uvicorn.error - INFO - ASGI 'lifespan' protocol appears unsupported.
+2021-10-28 10:25:14,309 - uvicorn.error - INFO - Application shutdown complete.
+2021-10-28 10:25:14,309 - uvicorn.error - INFO - Finished server process [66640]
+2021-10-28 10:37:18,084 - root - INFO - ** Kedro project spaceflights
+2021-10-28 10:37:18,752 - kedro.io.data_catalog - INFO - Loading data from `shuttles` (ExcelDataSet)...
+2021-10-28 10:37:27,896 - kedro.pipeline.node - INFO - Running node: preprocess_shuttles_node: preprocess_shuttles([shuttles]) -> [preprocessed_shuttles]
+2021-10-28 10:37:27,978 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_shuttles` (CSVDataSet)...
+2021-10-28 10:37:28,374 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2021-10-28 10:37:28,375 - kedro.io.data_catalog - INFO - Loading data from `companies` (CSVDataSet)...
+2021-10-28 10:37:28,410 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2021-10-28 10:37:28,410 - kedro.pipeline.node - ERROR - Node `preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]` failed with error: 
+
+2021-10-28 10:37:28,414 - kedro.runner.sequential_runner - WARNING - There are 5 nodes that have not run.
+You can resume the pipeline run by adding the following argument to your previous command:
+  --from-nodes "preprocess_companies_node,create_model_input_table_node,split_data_node"
+2021-10-28 10:39:08,362 - root - INFO - ** Kedro project spaceflights
+2021-10-28 10:39:09,019 - kedro.io.data_catalog - INFO - Loading data from `companies` (CSVDataSet)...
+2021-10-28 10:39:09,053 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2021-10-28 10:39:09,053 - kedro.pipeline.node - ERROR - Node `preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]` failed with error: 
+
+2021-10-28 10:39:09,056 - kedro.runner.sequential_runner - WARNING - There are 6 nodes that have not run.
+You can resume the pipeline run by adding the following argument to your previous command:
+
+2021-10-28 10:40:22,280 - root - INFO - ** Kedro project spaceflights
+2021-10-28 10:40:22,908 - kedro.io.data_catalog - INFO - Loading data from `companies` (CSVDataSet)...
+2021-10-28 10:40:22,941 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2021-10-28 10:40:22,941 - kedro.pipeline.node - ERROR - Node `preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]` failed with error: 
+
+2021-10-28 10:40:22,944 - kedro.runner.sequential_runner - WARNING - There are 6 nodes that have not run.
+You can resume the pipeline run by adding the following argument to your previous command:
+
+2021-10-28 10:41:14,166 - root - INFO - ** Kedro project spaceflights
+2021-10-28 10:41:14,798 - kedro.io.data_catalog - INFO - Loading data from `companies` (CSVDataSet)...
+2021-10-28 10:41:14,831 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2021-10-28 10:41:14,864 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_companies` (CSVDataSet)...
+2021-10-28 10:41:15,080 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2021-10-28 10:41:15,080 - kedro.io.data_catalog - INFO - Loading data from `shuttles` (ExcelDataSet)...
+2021-10-28 10:41:25,184 - kedro.pipeline.node - INFO - Running node: preprocess_shuttles_node: preprocess_shuttles([shuttles]) -> [preprocessed_shuttles]
+2021-10-28 10:41:25,272 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_shuttles` (CSVDataSet)...
+2021-10-28 10:41:25,714 - kedro.runner.sequential_runner - INFO - Completed 2 out of 6 tasks
+2021-10-28 10:41:25,715 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_shuttles` (CSVDataSet)...
+2021-10-28 10:41:25,818 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_companies` (CSVDataSet)...
+2021-10-28 10:41:25,852 - kedro.io.data_catalog - INFO - Loading data from `reviews` (CSVDataSet)...
+2021-10-28 10:41:25,924 - kedro.pipeline.node - INFO - Running node: create_model_input_table_node: create_model_input_table([preprocessed_companies,preprocessed_shuttles,reviews]) -> [model_input_table]
+2021-10-28 10:41:37,823 - kedro.io.data_catalog - INFO - Saving data to `model_input_table` (CSVDataSet)...
+2021-10-28 10:41:46,983 - kedro.runner.sequential_runner - INFO - Completed 3 out of 6 tasks
+2021-10-28 10:41:46,983 - kedro.io.data_catalog - INFO - Loading data from `model_input_table` (CSVDataSet)...
+2021-10-28 10:41:48,700 - kedro.io.data_catalog - INFO - Loading data from `parameters` (MemoryDataSet)...
+2021-10-28 10:41:48,702 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([model_input_table,parameters]) -> [X_test,X_train,y_test,y_train]
+2021-10-28 10:41:48,817 - kedro.io.data_catalog - INFO - Saving data to `X_train` (MemoryDataSet)...
+2021-10-28 10:41:48,822 - kedro.io.data_catalog - INFO - Saving data to `X_test` (MemoryDataSet)...
+2021-10-28 10:41:48,824 - kedro.io.data_catalog - INFO - Saving data to `y_train` (MemoryDataSet)...
+2021-10-28 10:41:48,825 - kedro.io.data_catalog - INFO - Saving data to `y_test` (MemoryDataSet)...
+2021-10-28 10:41:48,853 - kedro.runner.sequential_runner - INFO - Completed 4 out of 6 tasks
+2021-10-28 10:41:48,854 - kedro.io.data_catalog - INFO - Loading data from `X_train` (MemoryDataSet)...
+2021-10-28 10:41:48,859 - kedro.io.data_catalog - INFO - Loading data from `y_train` (MemoryDataSet)...
+2021-10-28 10:41:48,862 - kedro.pipeline.node - INFO - Running node: train_model_node: train_model([X_train,y_train]) -> [regressor]
+2021-10-28 10:41:49,306 - kedro.io.data_catalog - INFO - Saving data to `regressor` (PickleDataSet)...
+2021-10-28 10:41:49,314 - kedro.runner.sequential_runner - INFO - Completed 5 out of 6 tasks
+2021-10-28 10:41:49,315 - kedro.io.data_catalog - INFO - Loading data from `regressor` (PickleDataSet)...
+2021-10-28 10:41:49,315 - kedro.io.data_catalog - INFO - Loading data from `X_test` (MemoryDataSet)...
+2021-10-28 10:41:49,316 - kedro.io.data_catalog - INFO - Loading data from `y_test` (MemoryDataSet)...
+2021-10-28 10:41:49,318 - kedro.pipeline.node - INFO - Running node: evaluate_model_node: evaluate_model([X_test,regressor,y_test]) -> None
+2021-10-28 10:41:49,409 - spaceflights.pipelines.data_science.nodes - INFO - Model has a coefficient R^2 of 0.462 on test data.
+2021-10-28 10:41:49,413 - kedro.runner.sequential_runner - INFO - Completed 6 out of 6 tasks
+2021-10-28 10:41:49,414 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2021-10-28 10:42:50,072 - kedro.framework.session.store - INFO - `save()` not implemented for `BaseSessionStore`. Skipping the step.
+2021-10-28 10:42:57,999 - root - INFO - ** Kedro project spaceflights
+2021-10-28 10:42:59,027 - kedro.io.data_catalog - INFO - Loading data from `companies` (CSVDataSet)...
+2021-10-28 10:42:59,077 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2021-10-28 10:42:59,144 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_companies` (CSVDataSet)...
+2021-10-28 10:42:59,470 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2021-10-28 10:42:59,470 - kedro.io.data_catalog - INFO - Loading data from `shuttles` (ExcelDataSet)...
+2021-10-28 10:43:30,044 - kedro.pipeline.node - INFO - Running node: preprocess_shuttles_node: preprocess_shuttles([shuttles]) -> [preprocessed_shuttles]
+2021-10-28 10:43:30,217 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_shuttles` (CSVDataSet)...
+2021-10-28 10:43:30,757 - kedro.runner.sequential_runner - INFO - Completed 2 out of 6 tasks
+2021-10-28 10:43:30,757 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_shuttles` (CSVDataSet)...
+2021-10-28 10:43:30,853 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_companies` (CSVDataSet)...
+2021-10-28 10:43:30,885 - kedro.io.data_catalog - INFO - Loading data from `reviews` (CSVDataSet)...
+2021-10-28 10:43:30,960 - kedro.pipeline.node - INFO - Running node: create_model_input_table_node: create_model_input_table([preprocessed_companies,preprocessed_shuttles,reviews]) -> [model_input_table]
+2021-10-28 10:43:42,690 - kedro.io.data_catalog - INFO - Saving data to `model_input_table` (CSVDataSet)...
+2021-10-28 10:43:52,479 - kedro.runner.sequential_runner - INFO - Completed 3 out of 6 tasks
+2021-10-28 10:43:52,479 - kedro.io.data_catalog - INFO - Loading data from `model_input_table` (CSVDataSet)...
+2021-10-28 10:43:54,569 - kedro.io.data_catalog - INFO - Loading data from `parameters` (MemoryDataSet)...
+2021-10-28 10:43:54,584 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([model_input_table,parameters]) -> [X_test,X_train,y_test,y_train]
+2021-10-28 10:43:54,719 - kedro.io.data_catalog - INFO - Saving data to `X_train` (MemoryDataSet)...
+2021-10-28 10:43:54,725 - kedro.io.data_catalog - INFO - Saving data to `X_test` (MemoryDataSet)...
+2021-10-28 10:43:54,727 - kedro.io.data_catalog - INFO - Saving data to `y_train` (MemoryDataSet)...
+2021-10-28 10:43:54,729 - kedro.io.data_catalog - INFO - Saving data to `y_test` (MemoryDataSet)...
+2021-10-28 10:43:54,758 - kedro.runner.sequential_runner - INFO - Completed 4 out of 6 tasks
+2021-10-28 10:43:54,759 - kedro.io.data_catalog - INFO - Loading data from `X_train` (MemoryDataSet)...
+2021-10-28 10:43:54,764 - kedro.io.data_catalog - INFO - Loading data from `y_train` (MemoryDataSet)...
+2021-10-28 10:43:54,782 - kedro.pipeline.node - INFO - Running node: train_model_node: train_model([X_train,y_train]) -> [regressor]
+2021-10-28 10:43:55,202 - kedro.io.data_catalog - INFO - Saving data to `regressor` (PickleDataSet)...
+2021-10-28 10:43:55,213 - kedro.runner.sequential_runner - INFO - Completed 5 out of 6 tasks
+2021-10-28 10:43:55,213 - kedro.io.data_catalog - INFO - Loading data from `regressor` (PickleDataSet)...
+2021-10-28 10:43:55,214 - kedro.io.data_catalog - INFO - Loading data from `X_test` (MemoryDataSet)...
+2021-10-28 10:43:55,215 - kedro.io.data_catalog - INFO - Loading data from `y_test` (MemoryDataSet)...
+2021-10-28 10:43:55,226 - kedro.pipeline.node - INFO - Running node: evaluate_model_node: evaluate_model([X_test,regressor,y_test]) -> None
+2021-10-28 10:43:55,312 - spaceflights.pipelines.data_science.nodes - INFO - Model has a coefficient R^2 of 0.462 on test data.
+2021-10-28 10:43:55,325 - kedro.runner.sequential_runner - INFO - Completed 6 out of 6 tasks
+2021-10-28 10:43:55,325 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2021-10-28 10:46:54,226 - root - INFO - ** Kedro project spaceflights
+2021-10-28 10:46:55,266 - kedro.io.data_catalog - INFO - Loading data from `companies` (CSVDataSet)...
+2021-10-28 10:46:55,323 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2021-10-28 10:46:55,393 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_companies` (CSVDataSet)...
+2021-10-28 10:46:55,703 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2021-10-28 10:46:55,703 - kedro.io.data_catalog - INFO - Loading data from `shuttles` (ExcelDataSet)...
+2021-10-28 10:48:22,367 - root - INFO - ** Kedro project spaceflights
+2021-10-28 10:48:23,278 - kedro.io.data_catalog - INFO - Loading data from `shuttles` (ExcelDataSet)...
+2021-10-28 10:48:51,678 - kedro.pipeline.node - INFO - Running node: preprocess_shuttles_node: preprocess_shuttles([shuttles]) -> [preprocessed_shuttles]
+2021-10-28 10:48:51,871 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_shuttles` (CSVDataSet)...
+2021-10-28 10:48:52,425 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2021-10-28 10:48:52,425 - kedro.io.data_catalog - INFO - Loading data from `companies` (CSVDataSet)...
+2021-10-28 10:48:52,471 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2021-10-28 10:48:52,539 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_companies` (CSVDataSet)...
+2021-10-28 10:48:52,885 - kedro.runner.sequential_runner - INFO - Completed 2 out of 6 tasks
+2021-10-28 10:48:52,886 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_shuttles` (CSVDataSet)...
+2021-10-28 10:48:52,992 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_companies` (CSVDataSet)...
+2021-10-28 10:48:53,028 - kedro.io.data_catalog - INFO - Loading data from `reviews` (CSVDataSet)...
+2021-10-28 10:48:53,110 - kedro.pipeline.node - INFO - Running node: create_model_input_table_node: create_model_input_table([preprocessed_companies,preprocessed_shuttles,reviews]) -> [model_input_table]
+2021-10-28 10:48:54,883 - kedro.io.data_catalog - INFO - Saving data to `model_input_table` (CSVDataSet)...
+2021-10-28 10:49:04,158 - kedro.runner.sequential_runner - INFO - Completed 3 out of 6 tasks
+2021-10-28 10:49:04,159 - kedro.io.data_catalog - INFO - Loading data from `model_input_table` (CSVDataSet)...
+2021-10-28 10:49:05,959 - kedro.io.data_catalog - INFO - Loading data from `parameters` (MemoryDataSet)...
+2021-10-28 10:49:05,973 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([model_input_table,parameters]) -> [X_test,X_train,y_test,y_train]
+2021-10-28 10:49:06,106 - kedro.io.data_catalog - INFO - Saving data to `X_train` (MemoryDataSet)...
+2021-10-28 10:49:06,113 - kedro.io.data_catalog - INFO - Saving data to `X_test` (MemoryDataSet)...
+2021-10-28 10:49:06,115 - kedro.io.data_catalog - INFO - Saving data to `y_train` (MemoryDataSet)...
+2021-10-28 10:49:06,116 - kedro.io.data_catalog - INFO - Saving data to `y_test` (MemoryDataSet)...
+2021-10-28 10:49:06,144 - kedro.runner.sequential_runner - INFO - Completed 4 out of 6 tasks
+2021-10-28 10:49:06,144 - kedro.io.data_catalog - INFO - Loading data from `X_train` (MemoryDataSet)...
+2021-10-28 10:49:06,150 - kedro.io.data_catalog - INFO - Loading data from `y_train` (MemoryDataSet)...
+2021-10-28 10:49:06,165 - kedro.pipeline.node - INFO - Running node: train_model_node: train_model([X_train,y_train]) -> [regressor]
+2021-10-28 10:49:06,612 - kedro.io.data_catalog - INFO - Saving data to `regressor` (PickleDataSet)...
+2021-10-28 10:49:06,622 - kedro.runner.sequential_runner - INFO - Completed 5 out of 6 tasks
+2021-10-28 10:49:06,622 - kedro.io.data_catalog - INFO - Loading data from `regressor` (PickleDataSet)...
+2021-10-28 10:49:06,623 - kedro.io.data_catalog - INFO - Loading data from `X_test` (MemoryDataSet)...
+2021-10-28 10:49:06,624 - kedro.io.data_catalog - INFO - Loading data from `y_test` (MemoryDataSet)...
+2021-10-28 10:49:06,634 - kedro.pipeline.node - INFO - Running node: evaluate_model_node: evaluate_model([X_test,regressor,y_test]) -> None
+2021-10-28 10:49:06,720 - spaceflights.pipelines.data_science.nodes - INFO - Model has a coefficient R^2 of 0.462 on test data.
+2021-10-28 10:49:06,733 - kedro.runner.sequential_runner - INFO - Completed 6 out of 6 tasks
+2021-10-28 10:49:06,733 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2021-10-28 10:51:10,843 - root - INFO - ** Kedro project spaceflights
+2021-10-28 10:51:11,813 - kedro.io.data_catalog - INFO - Loading data from `shuttles` (ExcelDataSet)...
+2021-10-28 10:51:41,922 - kedro.pipeline.node - INFO - Running node: preprocess_shuttles_node: preprocess_shuttles([shuttles]) -> [preprocessed_shuttles]
+2021-10-28 10:51:42,114 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_shuttles` (CSVDataSet)...
+2021-10-28 10:51:42,670 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2021-10-28 10:51:42,670 - kedro.io.data_catalog - INFO - Loading data from `companies` (CSVDataSet)...
+2021-10-28 10:51:42,712 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2021-10-28 10:51:42,783 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_companies` (CSVDataSet)...
+2021-10-28 10:51:43,107 - kedro.runner.sequential_runner - INFO - Completed 2 out of 6 tasks
+2021-10-28 10:51:43,108 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_shuttles` (CSVDataSet)...
+2021-10-28 10:51:43,208 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_companies` (CSVDataSet)...
+2021-10-28 10:51:43,248 - kedro.io.data_catalog - INFO - Loading data from `reviews` (CSVDataSet)...
+2021-10-28 10:51:43,329 - kedro.pipeline.node - INFO - Running node: create_model_input_table_node: create_model_input_table([preprocessed_companies,preprocessed_shuttles,reviews]) -> [model_input_table]
+2021-10-28 10:51:45,124 - kedro.io.data_catalog - INFO - Saving data to `model_input_table` (CSVDataSet)...
+2021-10-28 10:51:55,126 - kedro.runner.sequential_runner - INFO - Completed 3 out of 6 tasks
+2021-10-28 10:51:55,126 - kedro.io.data_catalog - INFO - Loading data from `model_input_table` (CSVDataSet)...
+2021-10-28 10:51:57,020 - kedro.io.data_catalog - INFO - Loading data from `parameters` (MemoryDataSet)...
+2021-10-28 10:51:57,034 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([model_input_table,parameters]) -> [X_test,X_train,y_test,y_train]
+2021-10-28 10:51:57,151 - kedro.io.data_catalog - INFO - Saving data to `X_train` (MemoryDataSet)...
+2021-10-28 10:51:57,156 - kedro.io.data_catalog - INFO - Saving data to `X_test` (MemoryDataSet)...
+2021-10-28 10:51:57,158 - kedro.io.data_catalog - INFO - Saving data to `y_train` (MemoryDataSet)...
+2021-10-28 10:51:57,159 - kedro.io.data_catalog - INFO - Saving data to `y_test` (MemoryDataSet)...
+2021-10-28 10:51:57,185 - kedro.runner.sequential_runner - INFO - Completed 4 out of 6 tasks
+2021-10-28 10:51:57,185 - kedro.io.data_catalog - INFO - Loading data from `X_train` (MemoryDataSet)...
+2021-10-28 10:51:57,190 - kedro.io.data_catalog - INFO - Loading data from `y_train` (MemoryDataSet)...
+2021-10-28 10:51:57,206 - kedro.pipeline.node - INFO - Running node: train_model_node: train_model([X_train,y_train]) -> [regressor]
+2021-10-28 10:51:57,622 - kedro.io.data_catalog - INFO - Saving data to `regressor` (PickleDataSet)...
+2021-10-28 10:51:57,634 - kedro.runner.sequential_runner - INFO - Completed 5 out of 6 tasks
+2021-10-28 10:51:57,634 - kedro.io.data_catalog - INFO - Loading data from `regressor` (PickleDataSet)...
+2021-10-28 10:51:57,635 - kedro.io.data_catalog - INFO - Loading data from `X_test` (MemoryDataSet)...
+2021-10-28 10:51:57,636 - kedro.io.data_catalog - INFO - Loading data from `y_test` (MemoryDataSet)...
+2021-10-28 10:51:57,648 - kedro.pipeline.node - INFO - Running node: evaluate_model_node: evaluate_model([X_test,regressor,y_test]) -> None
+2021-10-28 10:51:57,732 - spaceflights.pipelines.data_science.nodes - INFO - Model has a coefficient R^2 of 0.462 on test data.
+2021-10-28 10:51:57,745 - kedro.runner.sequential_runner - INFO - Completed 6 out of 6 tasks
+2021-10-28 10:51:57,745 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2021-10-28 10:52:33,307 - root - INFO - ** Kedro project spaceflights
+2021-10-28 10:52:34,252 - kedro.io.data_catalog - INFO - Loading data from `shuttles` (ExcelDataSet)...
+2021-10-28 10:53:51,974 - root - INFO - ** Kedro project spaceflights
+2021-10-28 10:53:52,768 - kedro.io.data_catalog - INFO - Loading data from `companies` (CSVDataSet)...
+2021-10-28 10:53:52,815 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2021-10-28 10:53:52,816 - kedro.pipeline.node - ERROR - Node `preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]` failed with error: 
+
+2021-10-28 10:53:58,775 - kedro.runner.sequential_runner - WARNING - There are 6 nodes that have not run.
+You can resume the pipeline run by adding the following argument to your previous command:
+
+2021-10-28 10:54:16,548 - root - INFO - ** Kedro project spaceflights
+2021-10-28 10:54:17,046 - kedro.io.data_catalog - INFO - Loading data from `shuttles` (ExcelDataSet)...
+2021-10-28 10:54:27,242 - kedro.pipeline.node - INFO - Running node: preprocess_shuttles_node: preprocess_shuttles([shuttles]) -> [preprocessed_shuttles]
+2021-10-28 10:54:27,329 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_shuttles` (CSVDataSet)...
+2021-10-28 10:54:27,748 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2021-10-28 10:54:27,748 - kedro.io.data_catalog - INFO - Loading data from `companies` (CSVDataSet)...
+2021-10-28 10:54:27,779 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2021-10-28 10:54:27,779 - kedro.pipeline.node - ERROR - Node `preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]` failed with error: 
+
+2021-10-28 10:54:27,784 - kedro.runner.sequential_runner - WARNING - There are 5 nodes that have not run.
+You can resume the pipeline run by adding the following argument to your previous command:
+  --from-nodes "preprocess_companies_node,create_model_input_table_node,split_data_node"
+2021-10-28 10:55:12,746 - root - INFO - ** Kedro project spaceflights
+2021-10-28 10:55:13,574 - kedro.io.data_catalog - INFO - Loading data from `companies` (CSVDataSet)...
+2021-10-28 10:55:13,618 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2021-10-28 10:55:13,618 - kedro.pipeline.node - ERROR - Node `preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]` failed with error: 
+
+2021-10-28 10:55:13,630 - kedro.runner.sequential_runner - WARNING - There are 6 nodes that have not run.
+You can resume the pipeline run by adding the following argument to your previous command:
+
+2021-10-28 10:57:11,935 - root - INFO - ** Kedro project spaceflights
+2021-10-28 10:57:12,435 - kedro.io.data_catalog - INFO - Loading data from `shuttles` (ExcelDataSet)...
+2021-10-28 10:57:21,164 - kedro.pipeline.node - INFO - Running node: preprocess_shuttles_node: preprocess_shuttles([shuttles]) -> [preprocessed_shuttles]
+2021-10-28 10:57:21,243 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_shuttles` (CSVDataSet)...
+2021-10-28 10:57:21,638 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2021-10-28 10:57:21,638 - kedro.io.data_catalog - INFO - Loading data from `companies` (CSVDataSet)...
+2021-10-28 10:57:21,668 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2021-10-28 10:57:21,668 - kedro.pipeline.node - ERROR - Node `preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]` failed with error: 
+
+2021-10-28 10:57:21,671 - kedro.runner.sequential_runner - WARNING - There are 5 nodes that have not run.
+You can resume the pipeline run by adding the following argument to your previous command:
+  --from-nodes "preprocess_companies_node,create_model_input_table_node,split_data_node"
+2021-10-28 11:23:10,660 - root - INFO - ** Kedro project spaceflights
+2021-10-28 11:23:11,545 - kedro.io.data_catalog - INFO - Loading data from `companies` (CSVDataSet)...
+2021-10-28 11:23:11,590 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2021-10-28 11:23:11,628 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_companies` (CSVDataSet)...
+2021-10-28 11:23:11,832 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2021-10-28 11:23:11,833 - kedro.io.data_catalog - INFO - Loading data from `shuttles` (ExcelDataSet)...
+2021-10-28 11:23:20,719 - kedro.pipeline.node - INFO - Running node: preprocess_shuttles_node: preprocess_shuttles([shuttles]) -> [preprocessed_shuttles]
+2021-10-28 11:23:20,802 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_shuttles` (CSVDataSet)...
+2021-10-28 11:23:21,448 - kedro.runner.sequential_runner - INFO - Completed 2 out of 6 tasks
+2021-10-28 11:23:21,449 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_shuttles` (CSVDataSet)...
+2021-10-28 11:23:21,569 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_companies` (CSVDataSet)...
+2021-10-28 11:23:21,606 - kedro.io.data_catalog - INFO - Loading data from `reviews` (CSVDataSet)...
+2021-10-28 11:23:21,681 - kedro.pipeline.node - INFO - Running node: create_model_input_table_node: create_model_input_table([preprocessed_companies,preprocessed_shuttles,reviews]) -> [model_input_table]
+2021-10-28 11:23:23,500 - kedro.io.data_catalog - INFO - Saving data to `model_input_table` (CSVDataSet)...
+2021-10-28 11:23:32,333 - kedro.runner.sequential_runner - INFO - Completed 3 out of 6 tasks
+2021-10-28 11:23:32,334 - kedro.io.data_catalog - INFO - Loading data from `model_input_table` (CSVDataSet)...
+2021-10-28 11:23:34,177 - kedro.io.data_catalog - INFO - Loading data from `parameters` (MemoryDataSet)...
+2021-10-28 11:23:34,179 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([model_input_table,parameters]) -> [X_test,X_train,y_test,y_train]
+2021-10-28 11:23:34,313 - kedro.io.data_catalog - INFO - Saving data to `X_train` (MemoryDataSet)...
+2021-10-28 11:23:34,319 - kedro.io.data_catalog - INFO - Saving data to `X_test` (MemoryDataSet)...
+2021-10-28 11:23:34,321 - kedro.io.data_catalog - INFO - Saving data to `y_train` (MemoryDataSet)...
+2021-10-28 11:23:34,322 - kedro.io.data_catalog - INFO - Saving data to `y_test` (MemoryDataSet)...
+2021-10-28 11:23:34,353 - kedro.runner.sequential_runner - INFO - Completed 4 out of 6 tasks
+2021-10-28 11:23:34,353 - kedro.io.data_catalog - INFO - Loading data from `X_train` (MemoryDataSet)...
+2021-10-28 11:23:34,358 - kedro.io.data_catalog - INFO - Loading data from `y_train` (MemoryDataSet)...
+2021-10-28 11:23:34,362 - kedro.pipeline.node - INFO - Running node: train_model_node: train_model([X_train,y_train]) -> [regressor]
+2021-10-28 11:23:34,813 - kedro.io.data_catalog - INFO - Saving data to `regressor` (PickleDataSet)...
+2021-10-28 11:23:34,822 - kedro.runner.sequential_runner - INFO - Completed 5 out of 6 tasks
+2021-10-28 11:23:34,823 - kedro.io.data_catalog - INFO - Loading data from `regressor` (PickleDataSet)...
+2021-10-28 11:23:34,823 - kedro.io.data_catalog - INFO - Loading data from `X_test` (MemoryDataSet)...
+2021-10-28 11:23:34,824 - kedro.io.data_catalog - INFO - Loading data from `y_test` (MemoryDataSet)...
+2021-10-28 11:23:34,826 - kedro.pipeline.node - INFO - Running node: evaluate_model_node: evaluate_model([X_test,regressor,y_test]) -> [metrics]
+2021-10-28 11:23:34,922 - kedro.io.data_catalog - INFO - Saving data to `metrics` (MetricsDataSet)...
+2021-10-28 11:23:34,925 - kedro.runner.sequential_runner - INFO - Completed 6 out of 6 tasks
+2021-10-28 11:23:34,926 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2021-10-28 11:40:24,172 - root - INFO - ** Kedro project spaceflights
+2021-10-28 11:40:25,065 - kedro.io.data_catalog - INFO - Loading data from `companies` (CSVDataSet)...
+2021-10-28 11:40:25,102 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2021-10-28 11:40:25,141 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_companies` (CSVDataSet)...
+2021-10-28 11:40:25,399 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2021-10-28 11:40:25,399 - kedro.io.data_catalog - INFO - Loading data from `shuttles` (ExcelDataSet)...
+2021-10-28 11:40:36,919 - kedro.pipeline.node - INFO - Running node: preprocess_shuttles_node: preprocess_shuttles([shuttles]) -> [preprocessed_shuttles]
+2021-10-28 11:40:37,024 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_shuttles` (CSVDataSet)...
+2021-10-28 11:40:37,511 - kedro.runner.sequential_runner - INFO - Completed 2 out of 6 tasks
+2021-10-28 11:40:37,511 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_shuttles` (CSVDataSet)...
+2021-10-28 11:40:37,617 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_companies` (CSVDataSet)...
+2021-10-28 11:40:37,651 - kedro.io.data_catalog - INFO - Loading data from `reviews` (CSVDataSet)...
+2021-10-28 11:40:37,724 - kedro.pipeline.node - INFO - Running node: create_model_input_table_node: create_model_input_table([preprocessed_companies,preprocessed_shuttles,reviews]) -> [model_input_table]
+2021-10-28 11:40:39,486 - kedro.io.data_catalog - INFO - Saving data to `model_input_table` (CSVDataSet)...
+2021-10-28 11:40:49,717 - kedro.runner.sequential_runner - INFO - Completed 3 out of 6 tasks
+2021-10-28 11:40:49,717 - kedro.io.data_catalog - INFO - Loading data from `model_input_table` (CSVDataSet)...
+2021-10-28 11:40:51,764 - kedro.io.data_catalog - INFO - Loading data from `parameters` (MemoryDataSet)...
+2021-10-28 11:40:51,766 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([model_input_table,parameters]) -> [X_test,X_train,y_test,y_train]
+2021-10-28 11:40:51,892 - kedro.io.data_catalog - INFO - Saving data to `X_train` (MemoryDataSet)...
+2021-10-28 11:40:51,897 - kedro.io.data_catalog - INFO - Saving data to `X_test` (MemoryDataSet)...
+2021-10-28 11:40:51,899 - kedro.io.data_catalog - INFO - Saving data to `y_train` (MemoryDataSet)...
+2021-10-28 11:40:51,901 - kedro.io.data_catalog - INFO - Saving data to `y_test` (MemoryDataSet)...
+2021-10-28 11:40:51,928 - kedro.runner.sequential_runner - INFO - Completed 4 out of 6 tasks
+2021-10-28 11:40:51,929 - kedro.io.data_catalog - INFO - Loading data from `X_train` (MemoryDataSet)...
+2021-10-28 11:40:51,933 - kedro.io.data_catalog - INFO - Loading data from `y_train` (MemoryDataSet)...
+2021-10-28 11:40:51,936 - kedro.pipeline.node - INFO - Running node: train_model_node: train_model([X_train,y_train]) -> [regressor]
+2021-10-28 11:40:52,386 - kedro.io.data_catalog - INFO - Saving data to `regressor` (PickleDataSet)...
+2021-10-28 11:40:52,398 - kedro.runner.sequential_runner - INFO - Completed 5 out of 6 tasks
+2021-10-28 11:40:52,398 - kedro.io.data_catalog - INFO - Loading data from `regressor` (PickleDataSet)...
+2021-10-28 11:40:52,399 - kedro.io.data_catalog - INFO - Loading data from `X_test` (MemoryDataSet)...
+2021-10-28 11:40:52,400 - kedro.io.data_catalog - INFO - Loading data from `y_test` (MemoryDataSet)...
+2021-10-28 11:40:52,403 - kedro.pipeline.node - INFO - Running node: evaluate_model_node: evaluate_model([X_test,regressor,y_test]) -> [metrics]
+2021-10-28 11:40:52,500 - kedro.io.data_catalog - INFO - Saving data to `metrics` (MetricsDataSet)...
+2021-10-28 11:40:52,506 - kedro.runner.sequential_runner - INFO - Completed 6 out of 6 tasks
+2021-10-28 11:40:52,506 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2021-10-28 11:41:20,908 - uvicorn.error - INFO - Started server process [85195]
+2021-10-28 11:41:20,910 - uvicorn.error - INFO - Waiting for application startup.
+2021-10-28 11:41:20,911 - uvicorn.error - INFO - Application startup complete.
+2021-10-28 11:41:20,912 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:4141 (Press CTRL+C to quit)
+2021-10-28 11:41:28,042 - uvicorn.error - INFO - ('127.0.0.1', 59603) - "WebSocket /graphql" 403
+2021-10-28 11:41:28,305 - uvicorn.error - INFO - ('127.0.0.1', 59605) - "WebSocket /graphql" 403
+2021-10-28 11:41:28,444 - uvicorn.error - INFO - ('127.0.0.1', 59606) - "WebSocket /graphql" 403
+2021-10-28 11:41:28,994 - uvicorn.error - INFO - ('127.0.0.1', 59607) - "WebSocket /graphql" 403
+2021-10-28 11:41:29,848 - uvicorn.error - INFO - ('127.0.0.1', 59608) - "WebSocket /graphql" 403
+2021-10-28 11:41:32,085 - uvicorn.error - INFO - ('127.0.0.1', 59609) - "WebSocket /graphql" 403
+2021-10-28 11:41:33,971 - uvicorn.error - INFO - ('127.0.0.1', 59610) - "WebSocket /graphql" 403
+2021-10-28 11:41:43,281 - uvicorn.error - INFO - ('127.0.0.1', 59611) - "WebSocket /graphql" 403
+2021-10-28 11:41:54,064 - uvicorn.error - INFO - ('127.0.0.1', 59613) - "WebSocket /graphql" 403
+2021-10-28 11:41:55,727 - uvicorn.error - INFO - Shutting down
+2021-10-28 11:41:55,833 - uvicorn.error - INFO - Waiting for application shutdown.
+2021-10-28 11:41:55,835 - uvicorn.error - INFO - Application shutdown complete.
+2021-10-28 11:41:55,835 - uvicorn.error - INFO - Finished server process [85195]
+2021-10-28 11:45:01,665 - root - INFO - ** Kedro project spaceflights
+2021-10-28 11:45:02,515 - kedro.io.data_catalog - INFO - Loading data from `shuttles` (ExcelDataSet)...
+2021-10-28 11:45:19,248 - root - INFO - ** Kedro project spaceflights
+2021-10-28 11:45:19,785 - kedro.io.data_catalog - INFO - Loading data from `shuttles` (ExcelDataSet)...
+2021-10-28 11:45:29,586 - kedro.pipeline.node - INFO - Running node: preprocess_shuttles_node: preprocess_shuttles([shuttles]) -> [preprocessed_shuttles]
+2021-10-28 11:45:29,680 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_shuttles` (CSVDataSet)...
+2021-10-28 11:45:30,125 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2021-10-28 11:45:30,126 - kedro.io.data_catalog - INFO - Loading data from `companies` (CSVDataSet)...
+2021-10-28 11:45:30,161 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2021-10-28 11:45:30,201 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_companies` (CSVDataSet)...
+2021-10-28 11:45:30,435 - kedro.runner.sequential_runner - INFO - Completed 2 out of 6 tasks
+2021-10-28 11:45:30,435 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_shuttles` (CSVDataSet)...
+2021-10-28 11:45:30,537 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_companies` (CSVDataSet)...
+2021-10-28 11:45:30,570 - kedro.io.data_catalog - INFO - Loading data from `reviews` (CSVDataSet)...
+2021-10-28 11:45:30,642 - kedro.pipeline.node - INFO - Running node: create_model_input_table_node: create_model_input_table([preprocessed_companies,preprocessed_shuttles,reviews]) -> [model_input_table]
+2021-10-28 11:45:32,361 - kedro.io.data_catalog - INFO - Saving data to `model_input_table` (CSVDataSet)...
+2021-10-28 11:45:41,507 - kedro.runner.sequential_runner - INFO - Completed 3 out of 6 tasks
+2021-10-28 11:45:41,507 - kedro.io.data_catalog - INFO - Loading data from `model_input_table` (CSVDataSet)...
+2021-10-28 11:45:43,367 - kedro.io.data_catalog - INFO - Loading data from `parameters` (MemoryDataSet)...
+2021-10-28 11:45:43,369 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([model_input_table,parameters]) -> [X_test,X_train,y_test,y_train]
+2021-10-28 11:45:43,501 - kedro.io.data_catalog - INFO - Saving data to `X_train` (MemoryDataSet)...
+2021-10-28 11:45:43,505 - kedro.io.data_catalog - INFO - Saving data to `X_test` (MemoryDataSet)...
+2021-10-28 11:45:43,508 - kedro.io.data_catalog - INFO - Saving data to `y_train` (MemoryDataSet)...
+2021-10-28 11:45:43,509 - kedro.io.data_catalog - INFO - Saving data to `y_test` (MemoryDataSet)...
+2021-10-28 11:45:43,539 - kedro.runner.sequential_runner - INFO - Completed 4 out of 6 tasks
+2021-10-28 11:45:43,540 - kedro.io.data_catalog - INFO - Loading data from `X_train` (MemoryDataSet)...
+2021-10-28 11:45:43,544 - kedro.io.data_catalog - INFO - Loading data from `y_train` (MemoryDataSet)...
+2021-10-28 11:45:43,547 - kedro.pipeline.node - INFO - Running node: train_model_node: train_model([X_train,y_train]) -> [regressor]
+2021-10-28 11:45:43,978 - kedro.io.data_catalog - INFO - Saving data to `regressor` (PickleDataSet)...
+2021-10-28 11:45:43,991 - kedro.runner.sequential_runner - INFO - Completed 5 out of 6 tasks
+2021-10-28 11:45:43,991 - kedro.io.data_catalog - INFO - Loading data from `regressor` (PickleDataSet)...
+2021-10-28 11:45:43,992 - kedro.io.data_catalog - INFO - Loading data from `X_test` (MemoryDataSet)...
+2021-10-28 11:45:43,993 - kedro.io.data_catalog - INFO - Loading data from `y_test` (MemoryDataSet)...
+2021-10-28 11:45:43,995 - kedro.pipeline.node - INFO - Running node: evaluate_model_node: evaluate_model([X_test,regressor,y_test]) -> [metrics]
+2021-10-28 11:45:44,097 - kedro.io.data_catalog - INFO - Saving data to `metrics` (MetricsDataSet)...
+2021-10-28 11:45:44,102 - kedro.runner.sequential_runner - INFO - Completed 6 out of 6 tasks
+2021-10-28 11:45:44,102 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2021-10-28 11:45:57,931 - uvicorn.error - INFO - Started server process [87110]
+2021-10-28 11:45:57,933 - uvicorn.error - INFO - Waiting for application startup.
+2021-10-28 11:45:57,933 - uvicorn.error - INFO - Application startup complete.
+2021-10-28 11:45:57,935 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:4141 (Press CTRL+C to quit)
+2021-10-28 11:46:02,830 - uvicorn.error - INFO - ('127.0.0.1', 59788) - "WebSocket /graphql" 403
+2021-10-28 11:46:03,026 - uvicorn.error - INFO - ('127.0.0.1', 59789) - "WebSocket /graphql" 403
+2021-10-28 11:46:03,307 - uvicorn.error - INFO - ('127.0.0.1', 59790) - "WebSocket /graphql" 403
+2021-10-28 11:46:03,535 - uvicorn.error - INFO - ('127.0.0.1', 59792) - "WebSocket /graphql" 403
+2021-10-28 11:46:03,592 - uvicorn.error - INFO - ('127.0.0.1', 59793) - "WebSocket /graphql" 403
+2021-10-28 11:46:04,280 - uvicorn.error - INFO - ('127.0.0.1', 59797) - "WebSocket /graphql" 403
+2021-10-28 11:46:06,519 - uvicorn.error - INFO - ('127.0.0.1', 59806) - "WebSocket /graphql" 403
+2021-10-28 11:46:09,349 - uvicorn.error - INFO - ('127.0.0.1', 59807) - "WebSocket /graphql" 403
+2021-10-28 11:46:15,014 - uvicorn.error - INFO - ('127.0.0.1', 59808) - "WebSocket /graphql" 403
+2021-10-28 11:46:15,700 - uvicorn.error - INFO - ('127.0.0.1', 59810) - "WebSocket /graphql" 403
+2021-10-28 11:46:24,802 - uvicorn.error - INFO - ('127.0.0.1', 59812) - "WebSocket /graphql" 403
+2021-10-28 11:46:25,913 - uvicorn.error - INFO - ('127.0.0.1', 59813) - "WebSocket /graphql" 403
+2021-10-28 11:46:28,132 - uvicorn.error - INFO - Shutting down
+2021-10-28 11:46:28,233 - uvicorn.error - INFO - Waiting for application shutdown.
+2021-10-28 11:46:28,235 - uvicorn.error - INFO - Application shutdown complete.
+2021-10-28 11:46:28,236 - uvicorn.error - INFO - Finished server process [87110]
+2021-10-28 11:50:13,612 - uvicorn.error - INFO - Started server process [89136]
+2021-10-28 11:50:13,614 - uvicorn.error - INFO - Waiting for application startup.
+2021-10-28 11:50:13,614 - uvicorn.error - INFO - Application startup complete.
+2021-10-28 11:50:13,615 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:4141 (Press CTRL+C to quit)
+2021-10-28 11:50:16,602 - uvicorn.error - INFO - ('127.0.0.1', 59995) - "WebSocket /graphql" 403
+2021-10-28 11:50:19,245 - uvicorn.error - INFO - ('127.0.0.1', 59997) - "WebSocket /graphql" 403
+2021-10-28 11:50:19,481 - uvicorn.error - INFO - ('127.0.0.1', 59998) - "WebSocket /graphql" 403
+2021-10-28 11:50:19,542 - uvicorn.error - INFO - ('127.0.0.1', 59999) - "WebSocket /graphql" 403
+2021-10-28 11:50:19,611 - uvicorn.error - INFO - ('127.0.0.1', 60000) - "WebSocket /graphql" 403
+2021-10-28 11:50:20,233 - uvicorn.error - INFO - ('127.0.0.1', 60001) - "WebSocket /graphql" 403
+2021-10-28 11:50:21,471 - uvicorn.error - INFO - ('127.0.0.1', 60002) - "WebSocket /graphql" 403
+2021-10-28 11:50:22,506 - uvicorn.error - INFO - ('127.0.0.1', 60003) - "WebSocket /graphql" 403
+2021-10-28 11:50:24,577 - uvicorn.error - INFO - ('127.0.0.1', 60004) - "WebSocket /graphql" 403
+2021-10-28 11:50:27,728 - uvicorn.error - INFO - ('127.0.0.1', 60006) - "WebSocket /graphql" 403
+2021-10-28 11:50:29,363 - uvicorn.error - INFO - ('127.0.0.1', 60007) - "WebSocket /graphql" 403
+2021-10-28 11:50:31,539 - uvicorn.error - INFO - ('127.0.0.1', 60009) - "WebSocket /graphql" 403
+2021-10-28 11:50:38,949 - uvicorn.error - INFO - ('127.0.0.1', 60010) - "WebSocket /graphql" 403
+2021-10-28 11:50:41,792 - uvicorn.error - INFO - ('127.0.0.1', 60012) - "WebSocket /graphql" 403
+2021-10-28 11:50:43,659 - uvicorn.error - INFO - ('127.0.0.1', 60013) - "WebSocket /graphql" 403
+2021-10-28 11:50:49,843 - uvicorn.error - INFO - ('127.0.0.1', 60017) - "WebSocket /graphql" 403
+2021-10-28 11:50:55,700 - uvicorn.error - INFO - ('127.0.0.1', 60018) - "WebSocket /graphql" 403
+2021-10-28 11:50:56,517 - uvicorn.error - INFO - ('127.0.0.1', 60019) - "WebSocket /graphql" 403
+2021-10-28 11:51:00,548 - uvicorn.error - INFO - ('127.0.0.1', 60022) - "WebSocket /graphql" 403
+2021-10-28 11:51:07,855 - uvicorn.error - INFO - ('127.0.0.1', 60028) - "WebSocket /graphql" 403
+2021-10-28 11:51:10,489 - uvicorn.error - INFO - ('127.0.0.1', 60029) - "WebSocket /graphql" 403
+2021-10-28 11:51:12,381 - uvicorn.error - INFO - ('127.0.0.1', 60030) - "WebSocket /graphql" 403
+2021-10-28 11:51:20,291 - uvicorn.error - INFO - ('127.0.0.1', 60032) - "WebSocket /graphql" 403
+2021-10-28 11:51:22,671 - uvicorn.error - INFO - ('127.0.0.1', 60033) - "WebSocket /graphql" 403
+2021-10-28 11:51:23,010 - uvicorn.error - INFO - ('127.0.0.1', 60034) - "WebSocket /graphql" 403
+2021-10-28 11:51:33,817 - uvicorn.error - INFO - ('127.0.0.1', 60036) - "WebSocket /graphql" 403
+2021-10-28 11:51:33,869 - uvicorn.error - INFO - ('127.0.0.1', 60037) - "WebSocket /graphql" 403
+2021-10-28 11:51:37,336 - uvicorn.error - INFO - ('127.0.0.1', 60038) - "WebSocket /graphql" 403
+2021-10-28 11:51:44,629 - uvicorn.error - INFO - ('127.0.0.1', 60040) - "WebSocket /graphql" 403
+2021-10-28 11:51:47,355 - uvicorn.error - INFO - ('127.0.0.1', 60043) - "WebSocket /graphql" 403
+2021-10-28 11:51:49,714 - uvicorn.error - INFO - ('127.0.0.1', 60044) - "WebSocket /graphql" 403
+2021-10-28 11:51:56,138 - uvicorn.error - INFO - ('127.0.0.1', 60046) - "WebSocket /graphql" 403
+2021-10-28 11:52:01,501 - uvicorn.error - INFO - ('127.0.0.1', 60047) - "WebSocket /graphql" 403
+2021-10-28 11:52:03,349 - uvicorn.error - INFO - ('127.0.0.1', 60050) - "WebSocket /graphql" 403
+2021-10-28 11:52:06,531 - uvicorn.error - INFO - ('127.0.0.1', 60051) - "WebSocket /graphql" 403
+2021-10-28 11:52:14,537 - uvicorn.error - INFO - ('127.0.0.1', 60053) - "WebSocket /graphql" 403
+2021-10-28 11:52:16,141 - uvicorn.error - INFO - ('127.0.0.1', 60056) - "WebSocket /graphql" 403
+2021-10-28 11:52:17,534 - uvicorn.error - INFO - ('127.0.0.1', 60057) - "WebSocket /graphql" 403
+2021-10-28 11:52:28,532 - uvicorn.error - INFO - ('127.0.0.1', 60062) - "WebSocket /graphql" 403
+2021-10-28 11:52:29,294 - uvicorn.error - INFO - ('127.0.0.1', 60063) - "WebSocket /graphql" 403
+2021-10-28 11:52:29,736 - uvicorn.error - INFO - ('127.0.0.1', 60064) - "WebSocket /graphql" 403
+2021-10-28 11:52:39,764 - uvicorn.error - INFO - ('127.0.0.1', 60066) - "WebSocket /graphql" 403
+2021-10-28 11:52:41,143 - uvicorn.error - INFO - ('127.0.0.1', 60067) - "WebSocket /graphql" 403
+2021-10-28 11:52:45,581 - uvicorn.error - INFO - ('127.0.0.1', 60068) - "WebSocket /graphql" 403
+2021-10-28 11:52:51,522 - uvicorn.error - INFO - ('127.0.0.1', 60069) - "WebSocket /graphql" 403
+2021-10-28 11:52:54,002 - uvicorn.error - INFO - ('127.0.0.1', 60070) - "WebSocket /graphql" 403
+2021-10-28 11:52:59,522 - uvicorn.error - INFO - ('127.0.0.1', 60071) - "WebSocket /graphql" 403
+2021-10-28 11:53:02,142 - uvicorn.error - INFO - ('127.0.0.1', 60072) - "WebSocket /graphql" 403
+2021-10-28 11:53:09,384 - uvicorn.error - INFO - ('127.0.0.1', 60074) - "WebSocket /graphql" 403
+2021-10-28 11:53:13,619 - uvicorn.error - INFO - ('127.0.0.1', 60075) - "WebSocket /graphql" 403
+2021-10-28 11:53:13,639 - uvicorn.error - INFO - ('127.0.0.1', 60076) - "WebSocket /graphql" 403
+2021-10-28 11:53:23,746 - uvicorn.error - INFO - ('127.0.0.1', 60079) - "WebSocket /graphql" 403
+2021-10-28 11:53:25,059 - uvicorn.error - INFO - ('127.0.0.1', 60080) - "WebSocket /graphql" 403
+2021-10-28 11:53:26,794 - uvicorn.error - INFO - ('127.0.0.1', 60081) - "WebSocket /graphql" 403
+2021-10-28 11:53:34,531 - uvicorn.error - INFO - ('127.0.0.1', 60083) - "WebSocket /graphql" 403
+2021-10-28 11:53:35,807 - uvicorn.error - INFO - ('127.0.0.1', 60084) - "WebSocket /graphql" 403
+2021-10-28 11:53:36,802 - uvicorn.error - INFO - ('127.0.0.1', 60085) - "WebSocket /graphql" 403
+2021-10-28 11:53:45,531 - uvicorn.error - INFO - ('127.0.0.1', 60086) - "WebSocket /graphql" 403
+2021-10-28 11:53:46,560 - uvicorn.error - INFO - ('127.0.0.1', 60087) - "WebSocket /graphql" 403
+2021-10-28 11:53:46,807 - uvicorn.error - INFO - ('127.0.0.1', 60088) - "WebSocket /graphql" 403
+2021-10-28 11:53:56,532 - uvicorn.error - INFO - ('127.0.0.1', 60089) - "WebSocket /graphql" 403
+2021-10-28 11:53:56,814 - uvicorn.error - INFO - ('127.0.0.1', 60090) - "WebSocket /graphql" 403
+2021-10-28 11:53:58,376 - uvicorn.error - INFO - ('127.0.0.1', 60091) - "WebSocket /graphql" 403
+2021-10-28 11:54:06,821 - uvicorn.error - INFO - ('127.0.0.1', 60094) - "WebSocket /graphql" 403
+2021-10-28 11:54:07,546 - uvicorn.error - INFO - ('127.0.0.1', 60095) - "WebSocket /graphql" 403
+2021-10-28 11:54:08,604 - uvicorn.error - INFO - ('127.0.0.1', 60096) - "WebSocket /graphql" 403
+2021-10-28 11:54:16,852 - uvicorn.error - INFO - ('127.0.0.1', 60100) - "WebSocket /graphql" 403
+2021-10-28 11:54:18,609 - uvicorn.error - INFO - ('127.0.0.1', 60101) - "WebSocket /graphql" 403
+2021-10-28 11:54:19,537 - uvicorn.error - INFO - ('127.0.0.1', 60102) - "WebSocket /graphql" 403
+2021-10-28 11:54:26,953 - uvicorn.error - INFO - ('127.0.0.1', 60103) - "WebSocket /graphql" 403
+2021-10-28 11:54:29,834 - uvicorn.error - INFO - ('127.0.0.1', 60104) - "WebSocket /graphql" 403
+2021-10-28 11:54:30,534 - uvicorn.error - INFO - ('127.0.0.1', 60105) - "WebSocket /graphql" 403
+2021-10-28 11:54:37,192 - uvicorn.error - INFO - ('127.0.0.1', 60108) - "WebSocket /graphql" 403
+2021-10-28 11:54:41,717 - uvicorn.error - INFO - ('127.0.0.1', 60109) - "WebSocket /graphql" 403
+2021-10-28 11:54:42,487 - uvicorn.error - INFO - ('127.0.0.1', 60110) - "WebSocket /graphql" 403
+2021-10-28 11:54:48,620 - uvicorn.error - INFO - ('127.0.0.1', 60112) - "WebSocket /graphql" 403
+2021-10-28 11:54:52,546 - uvicorn.error - INFO - ('127.0.0.1', 60113) - "WebSocket /graphql" 403
+2021-10-28 11:54:55,068 - uvicorn.error - INFO - ('127.0.0.1', 60114) - "WebSocket /graphql" 403
+2021-10-28 11:55:00,505 - uvicorn.error - INFO - ('127.0.0.1', 60115) - "WebSocket /graphql" 403
+2021-10-28 11:55:03,547 - uvicorn.error - INFO - ('127.0.0.1', 60116) - "WebSocket /graphql" 403
+2021-10-28 11:55:08,821 - uvicorn.error - INFO - ('127.0.0.1', 60118) - "WebSocket /graphql" 403
+2021-10-28 11:55:12,837 - uvicorn.error - INFO - ('127.0.0.1', 60119) - "WebSocket /graphql" 403
+2021-10-28 11:55:14,600 - uvicorn.error - INFO - ('127.0.0.1', 60120) - "WebSocket /graphql" 403
+2021-10-28 11:55:23,674 - uvicorn.error - INFO - ('127.0.0.1', 60123) - "WebSocket /graphql" 403
+2021-10-28 11:55:24,815 - uvicorn.error - INFO - ('127.0.0.1', 60124) - "WebSocket /graphql" 403
+2021-10-28 11:55:26,720 - uvicorn.error - INFO - ('127.0.0.1', 60125) - "WebSocket /graphql" 403
+2021-10-28 11:55:34,534 - uvicorn.error - INFO - ('127.0.0.1', 60128) - "WebSocket /graphql" 403
+2021-10-28 11:55:34,820 - uvicorn.error - INFO - ('127.0.0.1', 60129) - "WebSocket /graphql" 403
+2021-10-28 11:55:37,758 - uvicorn.error - INFO - ('127.0.0.1', 60132) - "WebSocket /graphql" 403
+2021-10-28 11:55:44,826 - uvicorn.error - INFO - ('127.0.0.1', 60133) - "WebSocket /graphql" 403
+2021-10-28 11:55:45,536 - uvicorn.error - INFO - ('127.0.0.1', 60134) - "WebSocket /graphql" 403
+2021-10-28 11:55:48,531 - uvicorn.error - INFO - ('127.0.0.1', 60135) - "WebSocket /graphql" 403
+2021-10-28 11:55:54,834 - uvicorn.error - INFO - ('127.0.0.1', 60136) - "WebSocket /graphql" 403
+2021-10-28 11:55:56,533 - uvicorn.error - INFO - ('127.0.0.1', 60137) - "WebSocket /graphql" 403
+2021-10-28 11:55:59,528 - uvicorn.error - INFO - ('127.0.0.1', 60138) - "WebSocket /graphql" 403
+2021-10-28 11:56:04,846 - uvicorn.error - INFO - ('127.0.0.1', 60139) - "WebSocket /graphql" 403
+2021-10-28 11:56:07,546 - uvicorn.error - INFO - ('127.0.0.1', 60141) - "WebSocket /graphql" 403
+2021-10-28 11:56:10,529 - uvicorn.error - INFO - ('127.0.0.1', 60143) - "WebSocket /graphql" 403
+2021-10-28 11:56:14,880 - uvicorn.error - INFO - ('127.0.0.1', 60146) - "WebSocket /graphql" 403
+2021-10-28 11:56:18,579 - uvicorn.error - INFO - ('127.0.0.1', 60149) - "WebSocket /graphql" 403
+2021-10-28 11:56:21,530 - uvicorn.error - INFO - ('127.0.0.1', 60150) - "WebSocket /graphql" 403
+2021-10-28 11:56:25,583 - uvicorn.error - INFO - ('127.0.0.1', 60151) - "WebSocket /graphql" 403
+2021-10-28 11:56:29,645 - uvicorn.error - INFO - ('127.0.0.1', 60154) - "WebSocket /graphql" 403
+2021-10-28 11:56:32,532 - uvicorn.error - INFO - ('127.0.0.1', 60155) - "WebSocket /graphql" 403
+2021-10-28 11:56:35,857 - uvicorn.error - INFO - ('127.0.0.1', 60156) - "WebSocket /graphql" 403
+2021-10-28 11:56:44,021 - uvicorn.error - INFO - ('127.0.0.1', 60158) - "WebSocket /graphql" 403
+2021-10-28 11:56:46,417 - uvicorn.error - INFO - ('127.0.0.1', 60159) - "WebSocket /graphql" 403
+2021-10-28 11:56:54,975 - uvicorn.error - INFO - ('127.0.0.1', 60162) - "WebSocket /graphql" 403
+2021-10-28 11:56:57,484 - uvicorn.error - INFO - ('127.0.0.1', 60163) - "WebSocket /graphql" 403
+2021-10-28 11:57:05,550 - uvicorn.error - INFO - ('127.0.0.1', 60164) - "WebSocket /graphql" 403
+2021-10-28 11:57:11,119 - uvicorn.error - INFO - Shutting down
+2021-10-28 11:57:11,221 - uvicorn.error - INFO - Waiting for application shutdown.
+2021-10-28 11:57:11,223 - uvicorn.error - INFO - Application shutdown complete.
+2021-10-28 11:57:11,223 - uvicorn.error - INFO - Finished server process [89136]
+2021-10-28 11:58:14,590 - root - INFO - ** Kedro project spaceflights
+2021-10-28 11:58:15,150 - kedro.io.data_catalog - INFO - Loading data from `companies` (CSVDataSet)...
+2021-10-28 11:58:15,188 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2021-10-28 11:58:15,220 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_companies` (CSVDataSet)...
+2021-10-28 11:58:15,427 - kedro.runner.sequential_runner - INFO - Completed 1 out of 1 tasks
+2021-10-28 11:58:15,427 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2021-10-28 11:58:30,293 - root - INFO - ** Kedro project spaceflights
+2021-10-28 11:58:30,776 - kedro.io.data_catalog - INFO - Loading data from `companies` (CSVDataSet)...
+2021-10-28 11:58:30,807 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2021-10-28 11:58:30,841 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_companies` (CSVDataSet)...
+2021-10-28 11:58:31,054 - kedro.runner.sequential_runner - INFO - Completed 1 out of 2 tasks
+2021-10-28 11:58:31,054 - kedro.io.data_catalog - INFO - Loading data from `shuttles` (ExcelDataSet)...
+2021-10-28 11:58:39,975 - kedro.pipeline.node - INFO - Running node: preprocess_shuttles_node: preprocess_shuttles([shuttles]) -> [preprocessed_shuttles]
+2021-10-28 11:58:40,058 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_shuttles` (CSVDataSet)...
+2021-10-28 11:58:40,452 - kedro.runner.sequential_runner - INFO - Completed 2 out of 2 tasks
+2021-10-28 11:58:40,452 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2021-10-28 11:58:48,112 - root - INFO - ** Kedro project spaceflights
+2021-10-28 11:58:48,612 - kedro.io.data_catalog - INFO - Loading data from `shuttles` (ExcelDataSet)...
+2021-10-28 11:58:57,943 - kedro.pipeline.node - INFO - Running node: preprocess_shuttles_node: preprocess_shuttles([shuttles]) -> [preprocessed_shuttles]
+2021-10-28 11:58:58,036 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_shuttles` (CSVDataSet)...
+2021-10-28 11:58:58,495 - kedro.runner.sequential_runner - INFO - Completed 1 out of 3 tasks
+2021-10-28 11:58:58,495 - kedro.io.data_catalog - INFO - Loading data from `companies` (CSVDataSet)...
+2021-10-28 11:58:58,530 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2021-10-28 11:58:58,570 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_companies` (CSVDataSet)...
+2021-10-28 11:58:58,810 - kedro.runner.sequential_runner - INFO - Completed 2 out of 3 tasks
+2021-10-28 11:58:58,810 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_shuttles` (CSVDataSet)...
+2021-10-28 11:58:58,921 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_companies` (CSVDataSet)...
+2021-10-28 11:58:58,958 - kedro.io.data_catalog - INFO - Loading data from `reviews` (CSVDataSet)...
+2021-10-28 11:58:59,035 - kedro.pipeline.node - INFO - Running node: create_model_input_table_node: create_model_input_table([preprocessed_companies,preprocessed_shuttles,reviews]) -> [model_input_table]
+2021-10-28 11:59:00,862 - kedro.io.data_catalog - INFO - Saving data to `model_input_table` (CSVDataSet)...
+2021-10-28 11:59:09,898 - kedro.runner.sequential_runner - INFO - Completed 3 out of 3 tasks
+2021-10-28 11:59:09,899 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2021-10-28 11:59:16,165 - root - INFO - ** Kedro project spaceflights
+2021-10-28 11:59:16,819 - kedro.io.data_catalog - INFO - Loading data from `shuttles` (ExcelDataSet)...
+2021-10-28 11:59:26,622 - kedro.pipeline.node - INFO - Running node: preprocess_shuttles_node: preprocess_shuttles([shuttles]) -> [preprocessed_shuttles]
+2021-10-28 11:59:26,702 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_shuttles` (CSVDataSet)...
+2021-10-28 11:59:27,116 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2021-10-28 11:59:27,116 - kedro.io.data_catalog - INFO - Loading data from `companies` (CSVDataSet)...
+2021-10-28 11:59:27,150 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2021-10-28 11:59:27,182 - kedro.io.data_catalog - INFO - Saving data to `preprocessed_companies` (CSVDataSet)...
+2021-10-28 11:59:27,422 - kedro.runner.sequential_runner - INFO - Completed 2 out of 6 tasks
+2021-10-28 11:59:27,422 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_shuttles` (CSVDataSet)...
+2021-10-28 11:59:27,528 - kedro.io.data_catalog - INFO - Loading data from `preprocessed_companies` (CSVDataSet)...
+2021-10-28 11:59:27,563 - kedro.io.data_catalog - INFO - Loading data from `reviews` (CSVDataSet)...
+2021-10-28 11:59:27,633 - kedro.pipeline.node - INFO - Running node: create_model_input_table_node: create_model_input_table([preprocessed_companies,preprocessed_shuttles,reviews]) -> [model_input_table]
+2021-10-28 11:59:29,479 - kedro.io.data_catalog - INFO - Saving data to `model_input_table` (CSVDataSet)...
+2021-10-28 11:59:38,261 - kedro.runner.sequential_runner - INFO - Completed 3 out of 6 tasks
+2021-10-28 11:59:38,262 - kedro.io.data_catalog - INFO - Loading data from `model_input_table` (CSVDataSet)...
+2021-10-28 11:59:40,231 - kedro.io.data_catalog - INFO - Loading data from `parameters` (MemoryDataSet)...
+2021-10-28 11:59:40,234 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([model_input_table,parameters]) -> [X_test,X_train,y_test,y_train]
+2021-10-28 11:59:40,368 - kedro.io.data_catalog - INFO - Saving data to `X_train` (MemoryDataSet)...
+2021-10-28 11:59:40,372 - kedro.io.data_catalog - INFO - Saving data to `X_test` (MemoryDataSet)...
+2021-10-28 11:59:40,374 - kedro.io.data_catalog - INFO - Saving data to `y_train` (MemoryDataSet)...
+2021-10-28 11:59:40,375 - kedro.io.data_catalog - INFO - Saving data to `y_test` (MemoryDataSet)...
+2021-10-28 11:59:40,405 - kedro.runner.sequential_runner - INFO - Completed 4 out of 6 tasks
+2021-10-28 11:59:40,405 - kedro.io.data_catalog - INFO - Loading data from `X_train` (MemoryDataSet)...
+2021-10-28 11:59:40,410 - kedro.io.data_catalog - INFO - Loading data from `y_train` (MemoryDataSet)...
+2021-10-28 11:59:40,413 - kedro.pipeline.node - INFO - Running node: train_model_node: train_model([X_train,y_train]) -> [regressor]
+2021-10-28 11:59:40,926 - kedro.io.data_catalog - INFO - Saving data to `regressor` (PickleDataSet)...
+2021-10-28 11:59:40,941 - kedro.runner.sequential_runner - INFO - Completed 5 out of 6 tasks
+2021-10-28 11:59:40,941 - kedro.io.data_catalog - INFO - Loading data from `regressor` (PickleDataSet)...
+2021-10-28 11:59:40,942 - kedro.io.data_catalog - INFO - Loading data from `X_test` (MemoryDataSet)...
+2021-10-28 11:59:40,943 - kedro.io.data_catalog - INFO - Loading data from `y_test` (MemoryDataSet)...
+2021-10-28 11:59:40,945 - kedro.pipeline.node - INFO - Running node: evaluate_model_node: evaluate_model([X_test,regressor,y_test]) -> [metrics]
+2021-10-28 11:59:41,029 - kedro.io.data_catalog - INFO - Saving data to `metrics` (MetricsDataSet)...
+2021-10-28 11:59:41,034 - kedro.runner.sequential_runner - INFO - Completed 6 out of 6 tasks
+2021-10-28 11:59:41,034 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2021-10-28 11:59:51,645 - uvicorn.error - INFO - Started server process [90939]
+2021-10-28 11:59:51,646 - uvicorn.error - INFO - Waiting for application startup.
+2021-10-28 11:59:51,647 - uvicorn.error - INFO - Application startup complete.
+2021-10-28 11:59:51,648 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:4141 (Press CTRL+C to quit)
+2021-10-28 12:00:00,755 - uvicorn.error - INFO - ('127.0.0.1', 60294) - "WebSocket /graphql" 403
+2021-10-28 12:00:01,099 - uvicorn.error - INFO - ('127.0.0.1', 60298) - "WebSocket /graphql" 403
+2021-10-28 12:00:01,304 - uvicorn.error - INFO - ('127.0.0.1', 60299) - "WebSocket /graphql" 403
+2021-10-28 12:00:01,526 - uvicorn.error - INFO - ('127.0.0.1', 60300) - "WebSocket /graphql" 403
+2021-10-28 12:00:01,598 - uvicorn.error - INFO - ('127.0.0.1', 60301) - "WebSocket /graphql" 403
+2021-10-28 12:00:01,906 - uvicorn.error - INFO - ('127.0.0.1', 60302) - "WebSocket /graphql" 403
+2021-10-28 12:00:02,934 - uvicorn.error - INFO - ('127.0.0.1', 60303) - "WebSocket /graphql" 403
+2021-10-28 12:00:04,498 - uvicorn.error - INFO - ('127.0.0.1', 60304) - "WebSocket /graphql" 403
+2021-10-28 12:00:08,856 - uvicorn.error - INFO - ('127.0.0.1', 60307) - "WebSocket /graphql" 403
+2021-10-28 12:00:12,205 - uvicorn.error - INFO - ('127.0.0.1', 60308) - "WebSocket /graphql" 403
+2021-10-28 12:00:12,864 - uvicorn.error - INFO - ('127.0.0.1', 60309) - "WebSocket /graphql" 403
+2021-10-28 12:00:17,731 - uvicorn.error - INFO - ('127.0.0.1', 60311) - "WebSocket /graphql" 403
+2021-10-28 12:00:22,712 - uvicorn.error - INFO - ('127.0.0.1', 60313) - "WebSocket /graphql" 403
+2021-10-28 12:00:23,845 - uvicorn.error - INFO - ('127.0.0.1', 60314) - "WebSocket /graphql" 403
+2021-10-28 12:00:25,298 - uvicorn.error - INFO - ('127.0.0.1', 60315) - "WebSocket /graphql" 403
+2021-10-28 12:00:33,934 - uvicorn.error - INFO - ('127.0.0.1', 60320) - "WebSocket /graphql" 403
+2021-10-28 12:00:34,815 - uvicorn.error - INFO - ('127.0.0.1', 60321) - "WebSocket /graphql" 403
+2021-10-28 12:00:35,326 - uvicorn.error - INFO - ('127.0.0.1', 60322) - "WebSocket /graphql" 403
+2021-10-28 12:00:44,636 - uvicorn.error - INFO - ('127.0.0.1', 60325) - "WebSocket /graphql" 403
+2021-10-28 12:00:45,401 - uvicorn.error - INFO - ('127.0.0.1', 60326) - "WebSocket /graphql" 403
+2021-10-28 12:00:46,375 - uvicorn.error - INFO - ('127.0.0.1', 60327) - "WebSocket /graphql" 403
+2021-10-28 12:00:55,599 - uvicorn.error - INFO - ('127.0.0.1', 60328) - "WebSocket /graphql" 403
+2021-10-28 12:00:55,755 - uvicorn.error - INFO - ('127.0.0.1', 60329) - "WebSocket /graphql" 403
+2021-10-28 12:00:56,877 - uvicorn.error - INFO - ('127.0.0.1', 60330) - "WebSocket /graphql" 403
+2021-10-28 12:01:05,748 - uvicorn.error - INFO - ('127.0.0.1', 60331) - "WebSocket /graphql" 403
+2021-10-28 12:01:06,550 - uvicorn.error - INFO - ('127.0.0.1', 60334) - "WebSocket /graphql" 403
+2021-10-28 12:01:07,564 - uvicorn.error - INFO - ('127.0.0.1', 60336) - "WebSocket /graphql" 403
+2021-10-28 12:01:14,989 - uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/uvicorn/protocols/http/httptools_impl.py", line 398, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/routing.py", line 52, in app
+    response = await func(request)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/fastapi/routing.py", line 217, in app
+    dependant=dependant, values=values, is_coroutine=is_coroutine
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/fastapi/routing.py", line 149, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/kedro_viz-4.0.0-py3.7.egg/kedro_viz/api/router.py", line 129, in get_single_pipeline_data
+    json_data = json.loads(Path(load_file).read_text())
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/pathlib.py", line 1221, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/pathlib.py", line 1208, in open
+    opener=self._opener)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/pathlib.py", line 1063, in _opener
+    return self._accessor.open(self, flags, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/antony_milne/kedro/mine/keep/spaceflights/data/pipelines/2021-10-28T10.45.19.218Z.json'
+2021-10-28 12:01:17,904 - uvicorn.error - INFO - ('127.0.0.1', 60349) - "WebSocket /graphql" 403
+2021-10-28 12:01:18,190 - uvicorn.error - INFO - ('127.0.0.1', 60350) - "WebSocket /graphql" 403
+2021-10-28 12:01:18,573 - uvicorn.error - INFO - ('127.0.0.1', 60351) - "WebSocket /graphql" 403
+2021-10-28 12:01:28,628 - uvicorn.error - INFO - ('127.0.0.1', 60354) - "WebSocket /graphql" 403
+2021-10-28 12:01:29,102 - uvicorn.error - INFO - ('127.0.0.1', 60356) - "WebSocket /graphql" 403
+2021-10-28 12:01:29,674 - uvicorn.error - INFO - ('127.0.0.1', 60358) - "WebSocket /graphql" 403
+2021-10-28 12:01:39,530 - uvicorn.error - INFO - ('127.0.0.1', 60359) - "WebSocket /graphql" 403
+2021-10-28 12:01:39,879 - uvicorn.error - INFO - ('127.0.0.1', 60360) - "WebSocket /graphql" 403
+2021-10-28 12:01:40,527 - uvicorn.error - INFO - ('127.0.0.1', 60363) - "WebSocket /graphql" 403
+2021-10-28 12:01:49,883 - uvicorn.error - INFO - ('127.0.0.1', 60364) - "WebSocket /graphql" 403
+2021-10-28 12:01:50,528 - uvicorn.error - INFO - ('127.0.0.1', 60365) - "WebSocket /graphql" 403
+2021-10-28 12:01:51,853 - uvicorn.error - INFO - ('127.0.0.1', 60366) - "WebSocket /graphql" 403
+2021-10-28 12:01:59,889 - uvicorn.error - INFO - ('127.0.0.1', 60369) - "WebSocket /graphql" 403
+2021-10-28 12:02:02,488 - uvicorn.error - INFO - ('127.0.0.1', 60370) - "WebSocket /graphql" 403
+2021-10-28 12:02:03,373 - uvicorn.error - INFO - ('127.0.0.1', 60371) - "WebSocket /graphql" 403
+2021-10-28 12:02:09,896 - uvicorn.error - INFO - ('127.0.0.1', 60373) - "WebSocket /graphql" 403
+2021-10-28 12:02:12,584 - uvicorn.error - INFO - ('127.0.0.1', 60377) - "WebSocket /graphql" 403
+2021-10-28 12:02:13,637 - uvicorn.error - INFO - ('127.0.0.1', 60378) - "WebSocket /graphql" 403
+2021-10-28 12:02:19,904 - uvicorn.error - INFO - ('127.0.0.1', 60382) - "WebSocket /graphql" 403
+2021-10-28 12:02:24,087 - uvicorn.error - INFO - ('127.0.0.1', 60388) - "WebSocket /graphql" 403
+2021-10-28 12:02:24,635 - uvicorn.error - INFO - ('127.0.0.1', 60389) - "WebSocket /graphql" 403
+2021-10-28 12:02:29,908 - uvicorn.error - INFO - ('127.0.0.1', 60393) - "WebSocket /graphql" 403
+2021-10-28 12:02:34,526 - uvicorn.error - INFO - ('127.0.0.1', 60395) - "WebSocket /graphql" 403
+2021-10-28 12:02:35,529 - uvicorn.error - INFO - ('127.0.0.1', 60396) - "WebSocket /graphql" 403
+2021-10-28 12:02:39,919 - uvicorn.error - INFO - ('127.0.0.1', 60397) - "WebSocket /graphql" 403
+2021-10-28 12:02:45,531 - uvicorn.error - INFO - ('127.0.0.1', 60400) - "WebSocket /graphql" 403
+2021-10-28 12:02:46,537 - uvicorn.error - INFO - ('127.0.0.1', 60402) - "WebSocket /graphql" 403
+2021-10-28 12:02:49,929 - uvicorn.error - INFO - ('127.0.0.1', 60403) - "WebSocket /graphql" 403
+2021-10-28 12:02:56,541 - uvicorn.error - INFO - ('127.0.0.1', 60404) - "WebSocket /graphql" 403
+2021-10-28 12:02:57,539 - uvicorn.error - INFO - ('127.0.0.1', 60405) - "WebSocket /graphql" 403
+2021-10-28 12:02:59,947 - uvicorn.error - INFO - ('127.0.0.1', 60406) - "WebSocket /graphql" 403
+2021-10-28 12:03:07,549 - uvicorn.error - INFO - ('127.0.0.1', 60407) - "WebSocket /graphql" 403
+2021-10-28 12:03:08,542 - uvicorn.error - INFO - ('127.0.0.1', 60408) - "WebSocket /graphql" 403
+2021-10-28 12:03:10,028 - uvicorn.error - INFO - ('127.0.0.1', 60409) - "WebSocket /graphql" 403
+2021-10-28 12:03:18,776 - uvicorn.error - INFO - ('127.0.0.1', 60412) - "WebSocket /graphql" 403
+2021-10-28 12:03:19,592 - uvicorn.error - INFO - ('127.0.0.1', 60413) - "WebSocket /graphql" 403
+2021-10-28 12:03:20,178 - uvicorn.error - INFO - ('127.0.0.1', 60414) - "WebSocket /graphql" 403
+2021-10-28 12:03:29,898 - uvicorn.error - INFO - ('127.0.0.1', 60418) - "WebSocket /graphql" 403
+2021-10-28 12:03:30,371 - uvicorn.error - INFO - ('127.0.0.1', 60419) - "WebSocket /graphql" 403
+2021-10-28 12:03:30,966 - uvicorn.error - INFO - ('127.0.0.1', 60420) - "WebSocket /graphql" 403
+2021-10-28 12:03:40,378 - uvicorn.error - INFO - ('127.0.0.1', 60422) - "WebSocket /graphql" 403
+2021-10-28 12:03:40,695 - uvicorn.error - INFO - ('127.0.0.1', 60423) - "WebSocket /graphql" 403
+2021-10-28 12:03:41,726 - uvicorn.error - INFO - ('127.0.0.1', 60425) - "WebSocket /graphql" 403
+2021-10-28 12:03:50,384 - uvicorn.error - INFO - ('127.0.0.1', 60426) - "WebSocket /graphql" 403
+2021-10-28 12:03:52,418 - uvicorn.error - INFO - ('127.0.0.1', 60427) - "WebSocket /graphql" 403
+2021-10-28 12:03:52,628 - uvicorn.error - INFO - ('127.0.0.1', 60428) - "WebSocket /graphql" 403
+2021-10-28 12:04:00,390 - uvicorn.error - INFO - ('127.0.0.1', 60429) - "WebSocket /graphql" 403
+2021-10-28 12:04:03,292 - uvicorn.error - INFO - ('127.0.0.1', 60430) - "WebSocket /graphql" 403
+2021-10-28 12:04:03,947 - uvicorn.error - INFO - ('127.0.0.1', 60431) - "WebSocket /graphql" 403
+2021-10-28 12:04:10,397 - uvicorn.error - INFO - ('127.0.0.1', 60432) - "WebSocket /graphql" 403
+2021-10-28 12:04:13,698 - uvicorn.error - INFO - ('127.0.0.1', 60434) - "WebSocket /graphql" 403
+2021-10-28 12:04:14,686 - uvicorn.error - INFO - ('127.0.0.1', 60435) - "WebSocket /graphql" 403
+2021-10-28 12:04:20,404 - uvicorn.error - INFO - ('127.0.0.1', 60437) - "WebSocket /graphql" 403
+2021-10-28 12:04:25,332 - uvicorn.error - INFO - ('127.0.0.1', 60438) - "WebSocket /graphql" 403
+2021-10-28 12:04:26,232 - uvicorn.error - INFO - ('127.0.0.1', 60439) - "WebSocket /graphql" 403
+2021-10-28 12:04:30,415 - uvicorn.error - INFO - ('127.0.0.1', 60441) - "WebSocket /graphql" 403
+2021-10-28 12:04:36,064 - uvicorn.error - INFO - ('127.0.0.1', 60442) - "WebSocket /graphql" 403
+2021-10-28 12:04:36,708 - uvicorn.error - INFO - ('127.0.0.1', 60443) - "WebSocket /graphql" 403
+2021-10-28 12:04:40,430 - uvicorn.error - INFO - ('127.0.0.1', 60444) - "WebSocket /graphql" 403
+2021-10-28 12:04:46,529 - uvicorn.error - INFO - ('127.0.0.1', 60446) - "WebSocket /graphql" 403
+2021-10-28 12:04:47,536 - uvicorn.error - INFO - ('127.0.0.1', 60447) - "WebSocket /graphql" 403
+2021-10-28 12:04:50,454 - uvicorn.error - INFO - ('127.0.0.1', 60448) - "WebSocket /graphql" 403
+2021-10-28 12:04:57,536 - uvicorn.error - INFO - ('127.0.0.1', 60451) - "WebSocket /graphql" 403
+2021-10-28 12:04:58,538 - uvicorn.error - INFO - ('127.0.0.1', 60452) - "WebSocket /graphql" 403
+2021-10-28 12:05:00,488 - uvicorn.error - INFO - ('127.0.0.1', 60453) - "WebSocket /graphql" 403
+2021-10-28 12:05:08,986 - uvicorn.error - INFO - ('127.0.0.1', 60454) - "WebSocket /graphql" 403
+2021-10-28 12:05:10,056 - uvicorn.error - INFO - ('127.0.0.1', 60455) - "WebSocket /graphql" 403
+2021-10-28 12:05:10,533 - uvicorn.error - INFO - ('127.0.0.1', 60456) - "WebSocket /graphql" 403
+2021-10-28 12:05:19,599 - uvicorn.error - INFO - ('127.0.0.1', 60460) - "WebSocket /graphql" 403
+2021-10-28 12:05:20,553 - uvicorn.error - INFO - ('127.0.0.1', 60461) - "WebSocket /graphql" 403
+2021-10-28 12:05:20,613 - uvicorn.error - INFO - ('127.0.0.1', 60462) - "WebSocket /graphql" 403
+2021-10-28 12:05:30,116 - strawberry.execution - ERROR - This anonymous operation must be the only defined operation.
+
+GraphQL request:31:1
+30 | #
+31 |
+   | ^
+32 | query {
+Stack (most recent call last):
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/bin/kedro", line 33, in <module>
+    sys.exit(load_entry_point('kedro==0.17.5', 'console_scripts', 'kedro')())
+  File "/Users/antony_milne/kedro/private-kedro/kedro/framework/cli/cli.py", line 266, in main
+    cli_collection()
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/Users/antony_milne/kedro/private-kedro/kedro/framework/cli/cli.py", line 216, in main
+    **extra,
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/kedro_viz-4.0.0-py3.7.egg/kedro_viz/launchers/cli.py", line 129, in viz
+    run_server(**run_server_kwargs)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/kedro_viz-4.0.0-py3.7.egg/kedro_viz/server.py", line 120, in run_server
+    uvicorn.run(app, host=host, port=port)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/uvicorn/main.py", line 386, in run
+    server.run()
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/uvicorn/server.py", line 49, in run
+    loop.run_until_complete(self.serve(sockets=sockets))
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/uvicorn/protocols/http/httptools_impl.py", line 398, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/asgi/__init__.py", line 347, in __call__
+    await self.handle_http(scope=scope, receive=receive, send=send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/asgi/__init__.py", line 246, in handle_http
+    context=context,
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/asgi/__init__.py", line 317, in get_http_response
+    root_value=root_value,
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/asgi/__init__.py", line 340, in execute
+    context_value=context,
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/schema/schema.py", line 155, in execute
+    self.process_errors(result.errors, execution_context=execution_context)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/schema/schema.py", line 125, in process_errors
+    logger.error(error, exc_info=error.original_error, **kwargs)
+2021-10-28 12:05:30,118 - strawberry.execution - ERROR - This anonymous operation must be the only defined operation.
+
+GraphQL request:42:1
+41 | }
+42 |
+   | ^
+43 | query {
+Stack (most recent call last):
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/bin/kedro", line 33, in <module>
+    sys.exit(load_entry_point('kedro==0.17.5', 'console_scripts', 'kedro')())
+  File "/Users/antony_milne/kedro/private-kedro/kedro/framework/cli/cli.py", line 266, in main
+    cli_collection()
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/Users/antony_milne/kedro/private-kedro/kedro/framework/cli/cli.py", line 216, in main
+    **extra,
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/kedro_viz-4.0.0-py3.7.egg/kedro_viz/launchers/cli.py", line 129, in viz
+    run_server(**run_server_kwargs)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/kedro_viz-4.0.0-py3.7.egg/kedro_viz/server.py", line 120, in run_server
+    uvicorn.run(app, host=host, port=port)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/uvicorn/main.py", line 386, in run
+    server.run()
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/uvicorn/server.py", line 49, in run
+    loop.run_until_complete(self.serve(sockets=sockets))
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/uvicorn/protocols/http/httptools_impl.py", line 398, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/asgi/__init__.py", line 347, in __call__
+    await self.handle_http(scope=scope, receive=receive, send=send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/asgi/__init__.py", line 246, in handle_http
+    context=context,
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/asgi/__init__.py", line 317, in get_http_response
+    root_value=root_value,
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/asgi/__init__.py", line 340, in execute
+    context_value=context,
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/schema/schema.py", line 155, in execute
+    self.process_errors(result.errors, execution_context=execution_context)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/schema/schema.py", line 125, in process_errors
+    logger.error(error, exc_info=error.original_error, **kwargs)
+2021-10-28 12:05:30,119 - strawberry.execution - ERROR - Field 'runsWithData' argument 'runIds' of type '[ID!]!' is required, but it was not provided.
+
+GraphQL request:44:3
+43 | query {
+44 |   runsWithData{
+   |   ^
+45 |     id
+Stack (most recent call last):
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/bin/kedro", line 33, in <module>
+    sys.exit(load_entry_point('kedro==0.17.5', 'console_scripts', 'kedro')())
+  File "/Users/antony_milne/kedro/private-kedro/kedro/framework/cli/cli.py", line 266, in main
+    cli_collection()
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/Users/antony_milne/kedro/private-kedro/kedro/framework/cli/cli.py", line 216, in main
+    **extra,
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/kedro_viz-4.0.0-py3.7.egg/kedro_viz/launchers/cli.py", line 129, in viz
+    run_server(**run_server_kwargs)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/kedro_viz-4.0.0-py3.7.egg/kedro_viz/server.py", line 120, in run_server
+    uvicorn.run(app, host=host, port=port)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/uvicorn/main.py", line 386, in run
+    server.run()
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/uvicorn/server.py", line 49, in run
+    loop.run_until_complete(self.serve(sockets=sockets))
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/uvicorn/protocols/http/httptools_impl.py", line 398, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/starlette/routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/asgi/__init__.py", line 347, in __call__
+    await self.handle_http(scope=scope, receive=receive, send=send)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/asgi/__init__.py", line 246, in handle_http
+    context=context,
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/asgi/__init__.py", line 317, in get_http_response
+    root_value=root_value,
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/asgi/__init__.py", line 340, in execute
+    context_value=context,
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/schema/schema.py", line 155, in execute
+    self.process_errors(result.errors, execution_context=execution_context)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/schema/schema.py", line 125, in process_errors
+    logger.error(error, exc_info=error.original_error, **kwargs)
+2021-10-28 12:05:30,691 - uvicorn.error - INFO - ('127.0.0.1', 60464) - "WebSocket /graphql" 403
+2021-10-28 12:05:30,793 - uvicorn.error - INFO - ('127.0.0.1', 60465) - "WebSocket /graphql" 403
+2021-10-28 12:05:31,942 - uvicorn.error - INFO - ('127.0.0.1', 60466) - "WebSocket /graphql" 403
+2021-10-28 12:05:40,697 - uvicorn.error - INFO - ('127.0.0.1', 60468) - "WebSocket /graphql" 403
+2021-10-28 12:05:41,524 - uvicorn.error - INFO - ('127.0.0.1', 60469) - "WebSocket /graphql" 403
+2021-10-28 12:05:42,882 - uvicorn.error - INFO - ('127.0.0.1', 60470) - "WebSocket /graphql" 403
+2021-10-28 12:05:50,700 - uvicorn.error - INFO - ('127.0.0.1', 60472) - "WebSocket /graphql" 403
+2021-10-28 12:05:52,526 - uvicorn.error - INFO - ('127.0.0.1', 60473) - "WebSocket /graphql" 403
+2021-10-28 12:05:53,524 - uvicorn.error - INFO - ('127.0.0.1', 60474) - "WebSocket /graphql" 403
+2021-10-28 12:06:00,708 - uvicorn.error - INFO - ('127.0.0.1', 60475) - "WebSocket /graphql" 403
+2021-10-28 12:06:03,523 - uvicorn.error - INFO - ('127.0.0.1', 60476) - "WebSocket /graphql" 403
+2021-10-28 12:06:04,524 - uvicorn.error - INFO - ('127.0.0.1', 60477) - "WebSocket /graphql" 403
+2021-10-28 12:06:11,530 - uvicorn.error - INFO - ('127.0.0.1', 60478) - "WebSocket /graphql" 403
+2021-10-28 12:06:14,524 - uvicorn.error - INFO - ('127.0.0.1', 60480) - "WebSocket /graphql" 403
+2021-10-28 12:06:15,526 - uvicorn.error - INFO - ('127.0.0.1', 60481) - "WebSocket /graphql" 403
+2021-10-28 12:06:22,561 - uvicorn.error - INFO - ('127.0.0.1', 60483) - "WebSocket /graphql" 403
+2021-10-28 12:06:26,098 - uvicorn.error - INFO - ('127.0.0.1', 60484) - "WebSocket /graphql" 403
+2021-10-28 12:06:27,028 - uvicorn.error - INFO - ('127.0.0.1', 60485) - "WebSocket /graphql" 403
+2021-10-28 12:06:32,569 - uvicorn.error - INFO - ('127.0.0.1', 60486) - "WebSocket /graphql" 403
+2021-10-28 12:06:36,602 - uvicorn.error - INFO - ('127.0.0.1', 60488) - "WebSocket /graphql" 403
+2021-10-28 12:06:38,418 - uvicorn.error - INFO - ('127.0.0.1', 60490) - "WebSocket /graphql" 403
+2021-10-28 12:06:42,582 - uvicorn.error - INFO - ('127.0.0.1', 60491) - "WebSocket /graphql" 403
+2021-10-28 12:06:48,365 - uvicorn.error - INFO - ('127.0.0.1', 60493) - "WebSocket /graphql" 403
+2021-10-28 12:06:48,388 - strawberry.execution - ERROR - 'NoneType' object has no attribute 'id'
+
+GraphQL request:33:3
+32 | query {
+33 |   runsWithData(runIds: ["-10-28T10.59.16.092Z.json"]){
+   |   ^
+34 |     id
+Traceback (most recent call last):
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/graphql/execution/execute.py", line 625, in await_result
+    return_type, field_nodes, info, path, await result
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/middleware.py", line 32, in resolve
+    result = await await_maybe(next_(root, info, **kwargs))
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/schema/schema_converter.py", line 389, in _resolver
+    return _get_result(_source, strawberry_info, **kwargs)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/schema/schema_converter.py", line 382, in _get_result
+    _source, info=info, args=field_args, kwargs=field_kwargs
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/field.py", line 271, in get_result
+    return self.base_resolver(*args, **kwargs)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/types/fields/resolver.py", line 39, in __call__
+    return self.wrapped_func(*args, **kwargs)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/kedro_viz-4.0.0-py3.7.egg/kedro_viz/api/graphql.py", line 196, in runs_with_data
+    run = get_run(run_id)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/kedro_viz-4.0.0-py3.7.egg/kedro_viz/api/graphql.py", line 92, in get_run
+    return format_run(run_data.id, json.loads(run_data.blob))
+AttributeError: 'NoneType' object has no attribute 'id'
+Stack (most recent call last):
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/bin/kedro", line 33, in <module>
+    sys.exit(load_entry_point('kedro==0.17.5', 'console_scripts', 'kedro')())
+  File "/Users/antony_milne/kedro/private-kedro/kedro/framework/cli/cli.py", line 266, in main
+    cli_collection()
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/Users/antony_milne/kedro/private-kedro/kedro/framework/cli/cli.py", line 216, in main
+    **extra,
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/kedro_viz-4.0.0-py3.7.egg/kedro_viz/launchers/cli.py", line 129, in viz
+    run_server(**run_server_kwargs)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/kedro_viz-4.0.0-py3.7.egg/kedro_viz/server.py", line 120, in run_server
+    uvicorn.run(app, host=host, port=port)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/uvicorn/main.py", line 386, in run
+    server.run()
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/uvicorn/server.py", line 49, in run
+    loop.run_until_complete(self.serve(sockets=sockets))
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/schema/schema.py", line 155, in execute
+    self.process_errors(result.errors, execution_context=execution_context)
+  File "/Users/antony_milne/miniconda3/envs/spaceflights/lib/python3.7/site-packages/strawberry/schema/schema.py", line 125, in process_errors
+    logger.error(error, exc_info=error.original_error, **kwargs)
+2021-10-28 12:06:48,560 - uvicorn.error - INFO - ('127.0.0.1', 60495) - "WebSocket /graphql" 403
+2021-10-28 12:06:52,598 - uvicorn.error - INFO - ('127.0.0.1', 60496) - "WebSocket /graphql" 403
+2021-10-28 12:06:58,771 - uvicorn.error - INFO - ('127.0.0.1', 60497) - "WebSocket /graphql" 403
+2021-10-28 12:07:00,393 - uvicorn.error - INFO - ('127.0.0.1', 60498) - "WebSocket /graphql" 403
+2021-10-28 12:07:02,627 - uvicorn.error - INFO - ('127.0.0.1', 60499) - "WebSocket /graphql" 403
+2021-10-28 12:07:10,385 - uvicorn.error - INFO - ('127.0.0.1', 60501) - "WebSocket /graphql" 403
+2021-10-28 12:07:10,727 - uvicorn.error - INFO - ('127.0.0.1', 60502) - "WebSocket /graphql" 403
+2021-10-28 12:07:14,525 - uvicorn.error - INFO - ('127.0.0.1', 60504) - "WebSocket /graphql" 403
+2021-10-28 12:07:21,401 - uvicorn.error - INFO - ('127.0.0.1', 60507) - "WebSocket /graphql" 403
+2021-10-28 12:07:22,479 - uvicorn.error - INFO - ('127.0.0.1', 60508) - "WebSocket /graphql" 403
+2021-10-28 12:07:24,875 - uvicorn.error - INFO - ('127.0.0.1', 60509) - "WebSocket /graphql" 403
+2021-10-28 12:07:31,697 - uvicorn.error - INFO - ('127.0.0.1', 60510) - "WebSocket /graphql" 403
+2021-10-28 12:07:32,654 - uvicorn.error - INFO - ('127.0.0.1', 60511) - "WebSocket /graphql" 403
+2021-10-28 12:07:35,105 - uvicorn.error - INFO - ('127.0.0.1', 60513) - "WebSocket /graphql" 403
+2021-10-28 12:07:43,500 - uvicorn.error - INFO - ('127.0.0.1', 60514) - "WebSocket /graphql" 403
+2021-10-28 12:07:44,477 - uvicorn.error - INFO - ('127.0.0.1', 60515) - "WebSocket /graphql" 403
+2021-10-28 12:07:45,113 - uvicorn.error - INFO - ('127.0.0.1', 60517) - "WebSocket /graphql" 403
+2021-10-28 12:07:53,523 - uvicorn.error - INFO - ('127.0.0.1', 60519) - "WebSocket /graphql" 403
+2021-10-28 12:07:54,523 - uvicorn.error - INFO - ('127.0.0.1', 60520) - "WebSocket /graphql" 403
+2021-10-28 12:07:55,119 - uvicorn.error - INFO - ('127.0.0.1', 60521) - "WebSocket /graphql" 403
+2021-10-28 12:08:04,558 - uvicorn.error - INFO - ('127.0.0.1', 60524) - "WebSocket /graphql" 403
+2021-10-28 12:08:05,123 - uvicorn.error - INFO - ('127.0.0.1', 60525) - "WebSocket /graphql" 403
+2021-10-28 12:08:05,526 - uvicorn.error - INFO - ('127.0.0.1', 60526) - "WebSocket /graphql" 403
+2021-10-28 12:08:15,129 - uvicorn.error - INFO - ('127.0.0.1', 60530) - "WebSocket /graphql" 403
+2021-10-28 12:08:15,951 - uvicorn.error - INFO - ('127.0.0.1', 60531) - "WebSocket /graphql" 403
+2021-10-28 12:08:16,734 - uvicorn.error - INFO - ('127.0.0.1', 60533) - "WebSocket /graphql" 403
+2021-10-28 12:08:25,135 - uvicorn.error - INFO - ('127.0.0.1', 60534) - "WebSocket /graphql" 403
+2021-10-28 12:08:27,275 - uvicorn.error - INFO - ('127.0.0.1', 60535) - "WebSocket /graphql" 403
+2021-10-28 12:08:27,894 - uvicorn.error - INFO - ('127.0.0.1', 60536) - "WebSocket /graphql" 403
+2021-10-28 12:08:35,553 - uvicorn.error - INFO - ('127.0.0.1', 60539) - "WebSocket /graphql" 403
+2021-10-28 12:08:37,526 - uvicorn.error - INFO - ('127.0.0.1', 60541) - "WebSocket /graphql" 403
+2021-10-28 12:08:39,377 - uvicorn.error - INFO - ('127.0.0.1', 60542) - "WebSocket /graphql" 403
+2021-10-28 12:08:46,868 - uvicorn.error - INFO - ('127.0.0.1', 60544) - "WebSocket /graphql" 403
+2021-10-28 12:08:49,031 - uvicorn.error - INFO - ('127.0.0.1', 60545) - "WebSocket /graphql" 403
+2021-10-28 12:08:49,610 - uvicorn.error - INFO - ('127.0.0.1', 60546) - "WebSocket /graphql" 403
+2021-10-28 12:08:58,376 - uvicorn.error - INFO - ('127.0.0.1', 60547) - "WebSocket /graphql" 403
+2021-10-28 12:08:59,954 - uvicorn.error - INFO - ('127.0.0.1', 60548) - "WebSocket /graphql" 403
+2021-10-28 12:09:01,217 - uvicorn.error - INFO - ('127.0.0.1', 60549) - "WebSocket /graphql" 403
+2021-10-28 12:09:09,136 - uvicorn.error - INFO - ('127.0.0.1', 60550) - "WebSocket /graphql" 403
+2021-10-28 12:09:10,809 - uvicorn.error - INFO - ('127.0.0.1', 60551) - "WebSocket /graphql" 403
+2021-10-28 12:09:12,213 - uvicorn.error - INFO - ('127.0.0.1', 60552) - "WebSocket /graphql" 403
+2021-10-28 12:09:20,500 - uvicorn.error - INFO - ('127.0.0.1', 60556) - "WebSocket /graphql" 403
+2021-10-28 12:09:21,590 - uvicorn.error - INFO - ('127.0.0.1', 60557) - "WebSocket /graphql" 403
+2021-10-28 12:09:23,276 - uvicorn.error - INFO - ('127.0.0.1', 60558) - "WebSocket /graphql" 403
+2021-10-28 12:09:31,221 - uvicorn.error - INFO - ('127.0.0.1', 60559) - "WebSocket /graphql" 403
+2021-10-28 12:09:33,606 - uvicorn.error - INFO - ('127.0.0.1', 60560) - "WebSocket /graphql" 403
+2021-10-28 12:09:34,307 - uvicorn.error - INFO - ('127.0.0.1', 60561) - "WebSocket /graphql" 403
+2021-10-28 12:09:42,104 - uvicorn.error - INFO - ('127.0.0.1', 60562) - "WebSocket /graphql" 403
+2021-10-28 12:09:43,704 - uvicorn.error - INFO - ('127.0.0.1', 60563) - "WebSocket /graphql" 403
+2021-10-28 12:09:45,222 - uvicorn.error - INFO - ('127.0.0.1', 60564) - "WebSocket /graphql" 403
+2021-10-28 12:09:53,053 - uvicorn.error - INFO - ('127.0.0.1', 60566) - "WebSocket /graphql" 403
+2021-10-28 12:09:54,928 - uvicorn.error - INFO - ('127.0.0.1', 60567) - "WebSocket /graphql" 403
+2021-10-28 12:09:56,172 - uvicorn.error - INFO - ('127.0.0.1', 60568) - "WebSocket /graphql" 403
+2021-10-28 12:10:03,785 - uvicorn.error - INFO - ('127.0.0.1', 60569) - "WebSocket /graphql" 403
+2021-10-28 12:10:06,119 - uvicorn.error - INFO - ('127.0.0.1', 60570) - "WebSocket /graphql" 403
+2021-10-28 12:10:07,294 - uvicorn.error - INFO - ('127.0.0.1', 60571) - "WebSocket /graphql" 403
+2021-10-28 12:10:15,084 - uvicorn.error - INFO - ('127.0.0.1', 60574) - "WebSocket /graphql" 403
+2021-10-28 12:10:17,150 - uvicorn.error - INFO - ('127.0.0.1', 60578) - "WebSocket /graphql" 403
+2021-10-28 12:10:18,177 - uvicorn.error - INFO - ('127.0.0.1', 60579) - "WebSocket /graphql" 403
+2021-10-28 12:10:26,160 - uvicorn.error - INFO - ('127.0.0.1', 60585) - "WebSocket /graphql" 403
+2021-10-28 12:10:27,532 - uvicorn.error - INFO - ('127.0.0.1', 60588) - "WebSocket /graphql" 403
+2021-10-28 12:10:28,527 - uvicorn.error - INFO - ('127.0.0.1', 60591) - "WebSocket /graphql" 403
+2021-10-28 12:10:36,698 - uvicorn.error - INFO - ('127.0.0.1', 60592) - "WebSocket /graphql" 403
+2021-10-28 12:10:38,527 - uvicorn.error - INFO - ('127.0.0.1', 60593) - "WebSocket /graphql" 403
+2021-10-28 12:10:40,472 - uvicorn.error - INFO - ('127.0.0.1', 60595) - "WebSocket /graphql" 403
+2021-10-28 12:10:47,529 - uvicorn.error - INFO - ('127.0.0.1', 60598) - "WebSocket /graphql" 403
+2021-10-28 12:10:49,801 - uvicorn.error - INFO - ('127.0.0.1', 60600) - "WebSocket /graphql" 403
+2021-10-28 12:10:51,444 - uvicorn.error - INFO - ('127.0.0.1', 60601) - "WebSocket /graphql" 403
+2021-10-28 12:10:59,294 - uvicorn.error - INFO - ('127.0.0.1', 60602) - "WebSocket /graphql" 403
+2021-10-28 12:11:00,525 - uvicorn.error - INFO - ('127.0.0.1', 60603) - "WebSocket /graphql" 403
+2021-10-28 12:11:01,550 - uvicorn.error - INFO - ('127.0.0.1', 60604) - "WebSocket /graphql" 403
+2021-10-28 12:11:10,072 - uvicorn.error - INFO - ('127.0.0.1', 60610) - "WebSocket /graphql" 403
+2021-10-28 12:11:11,538 - uvicorn.error - INFO - ('127.0.0.1', 60611) - "WebSocket /graphql" 403
+2021-10-28 12:11:12,536 - uvicorn.error - INFO - ('127.0.0.1', 60612) - "WebSocket /graphql" 403
+2021-10-28 12:11:20,816 - uvicorn.error - INFO - ('127.0.0.1', 60617) - "WebSocket /graphql" 403
+2021-10-28 12:11:22,872 - uvicorn.error - INFO - ('127.0.0.1', 60618) - "WebSocket /graphql" 403
+2021-10-28 12:11:23,586 - uvicorn.error - INFO - ('127.0.0.1', 60619) - "WebSocket /graphql" 403
+2021-10-28 12:11:31,895 - uvicorn.error - INFO - ('127.0.0.1', 60621) - "WebSocket /graphql" 403
+2021-10-28 12:11:34,157 - uvicorn.error - INFO - ('127.0.0.1', 60622) - "WebSocket /graphql" 403
+2021-10-28 12:11:34,609 - uvicorn.error - INFO - ('127.0.0.1', 60623) - "WebSocket /graphql" 403
+2021-10-28 12:11:42,828 - uvicorn.error - INFO - ('127.0.0.1', 60633) - "WebSocket /graphql" 403
+2021-10-28 12:11:44,811 - uvicorn.error - INFO - ('127.0.0.1', 60634) - "WebSocket /graphql" 403
+2021-10-28 12:11:45,630 - uvicorn.error - INFO - ('127.0.0.1', 60635) - "WebSocket /graphql" 403
+2021-10-28 12:11:54,124 - uvicorn.error - INFO - ('127.0.0.1', 60647) - "WebSocket /graphql" 403
+2021-10-28 12:11:55,869 - uvicorn.error - INFO - ('127.0.0.1', 60650) - "WebSocket /graphql" 403
+2021-10-28 12:11:57,123 - uvicorn.error - INFO - ('127.0.0.1', 60651) - "WebSocket /graphql" 403
+2021-10-28 12:12:05,094 - uvicorn.error - INFO - ('127.0.0.1', 60654) - "WebSocket /graphql" 403
+2021-10-28 12:12:06,595 - uvicorn.error - INFO - ('127.0.0.1', 60655) - "WebSocket /graphql" 403
+2021-10-28 12:12:07,718 - uvicorn.error - INFO - ('127.0.0.1', 60656) - "WebSocket /graphql" 403
+2021-10-28 12:12:10,869 - uvicorn.error - INFO - Shutting down
+2021-10-28 12:12:10,974 - uvicorn.error - INFO - Waiting for application shutdown.
+2021-10-28 12:12:10,976 - uvicorn.error - INFO - Application shutdown complete.
+2021-10-28 12:12:10,977 - uvicorn.error - INFO - Finished server process [90939]
