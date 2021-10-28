@@ -1,0 +1,1781 @@
+{
+    "edges": [
+        {
+            "source": "c7b426b9",
+            "target": "9c45a98b"
+        },
+        {
+            "source": "pipeline_0",
+            "target": "0ac69a3e"
+        },
+        {
+            "source": "ae99828d",
+            "target": "cb8dc08a"
+        },
+        {
+            "source": "23c94afb",
+            "target": "6320b85b"
+        },
+        {
+            "source": "b42ec17c",
+            "target": "cb8dc08a"
+        },
+        {
+            "source": "6320b85b",
+            "target": "62800318"
+        },
+        {
+            "source": "c071dac9",
+            "target": "db54c3c7"
+        },
+        {
+            "source": "f04aacbf",
+            "target": "2d4f7691"
+        },
+        {
+            "source": "2d4f7691",
+            "target": "cf3251ed"
+        },
+        {
+            "source": "23c94afb",
+            "target": "4bd20678"
+        },
+        {
+            "source": "23c94afb",
+            "target": "c7b426b9"
+        },
+        {
+            "source": "abfb1c03",
+            "target": "2fd48555"
+        },
+        {
+            "source": "4148b51b",
+            "target": "14b8c17b"
+        },
+        {
+            "source": "f6d9538c",
+            "target": "f274243a"
+        },
+        {
+            "source": "62800318",
+            "target": "filtered"
+        },
+        {
+            "source": "10d78e97",
+            "target": "ae99828d"
+        },
+        {
+            "source": "62800318",
+            "target": "10d78e97"
+        },
+        {
+            "source": "aed46479",
+            "target": "94112458"
+        },
+        {
+            "source": "9ca016a8",
+            "target": "15b893f7"
+        },
+        {
+            "source": "00e32b39",
+            "target": "872981f9"
+        },
+        {
+            "source": "93d834e1",
+            "target": "f274243a"
+        },
+        {
+            "source": "dd637447",
+            "target": "70da5777"
+        },
+        {
+            "source": "15b893f7",
+            "target": "93d834e1"
+        },
+        {
+            "source": "00e32b39",
+            "target": "9ca016a8"
+        },
+        {
+            "source": "00e32b39",
+            "target": "cae2d1c7"
+        },
+        {
+            "source": "10d78e97",
+            "target": "4b38e7c6"
+        },
+        {
+            "source": "a28c4a35",
+            "target": "f1a8b59d"
+        },
+        {
+            "source": "8abdd604",
+            "target": "4148b51b"
+        },
+        {
+            "source": "f1f1425b",
+            "target": "pipeline_2"
+        },
+        {
+            "source": "00e32b39",
+            "target": "f6d9538c"
+        },
+        {
+            "source": "373ba6e1",
+            "target": "07609e88"
+        },
+        {
+            "source": "24cd6d97",
+            "target": "e70f7c62"
+        },
+        {
+            "source": "c7b426b9",
+            "target": "237a57aa"
+        },
+        {
+            "source": "cb8dc08a",
+            "target": "ad61c271"
+        },
+        {
+            "source": "filtered",
+            "target": "14b8c17b"
+        },
+        {
+            "source": "493ad53a",
+            "target": "db54c3c7"
+        },
+        {
+            "source": "4bd20678",
+            "target": "fc7e2889"
+        },
+        {
+            "source": "75432162",
+            "target": "373ba6e1"
+        },
+        {
+            "source": "c7b426b9",
+            "target": "b10be219"
+        },
+        {
+            "source": "23c94afb",
+            "target": "pipeline_2"
+        },
+        {
+            "source": "70da5777",
+            "target": "373ba6e1"
+        },
+        {
+            "source": "ad61c271",
+            "target": "4148b51b"
+        },
+        {
+            "source": "cf3251ed",
+            "target": "373ba6e1"
+        },
+        {
+            "source": "23c94afb",
+            "target": "00e32b39"
+        },
+        {
+            "source": "f1f1425b",
+            "target": "dd637447"
+        },
+        {
+            "source": "10d78e97",
+            "target": "b42ec17c"
+        },
+        {
+            "source": "acdb05cf",
+            "target": "c071dac9"
+        },
+        {
+            "source": "f1d596c2",
+            "target": "acdb05cf"
+        },
+        {
+            "source": "a431b0bc",
+            "target": "14f415c0"
+        },
+        {
+            "source": "f1f1425b",
+            "target": "10d78e97"
+        },
+        {
+            "source": "cae2d1c7",
+            "target": "15b893f7"
+        },
+        {
+            "source": "dd637447",
+            "target": "f04aacbf"
+        },
+        {
+            "source": "4bd20678",
+            "target": "7e802db4"
+        },
+        {
+            "source": "4bd20678",
+            "target": "abfb1c03"
+        },
+        {
+            "source": "fc7e2889",
+            "target": "f1a8b59d"
+        },
+        {
+            "source": "b7c150b6",
+            "target": "2fd48555"
+        },
+        {
+            "source": "7e802db4",
+            "target": "f1a8b59d"
+        },
+        {
+            "source": "237a57aa",
+            "target": "14f415c0"
+        },
+        {
+            "source": "f1f1425b",
+            "target": "pipeline_1"
+        },
+        {
+            "source": "9c45a98b",
+            "target": "e70f7c62"
+        },
+        {
+            "source": "14f415c0",
+            "target": "3d7991b0"
+        },
+        {
+            "source": "e70f7c62",
+            "target": "a431b0bc"
+        },
+        {
+            "source": "f1f1425b",
+            "target": "pipeline_0"
+        },
+        {
+            "source": "4b38e7c6",
+            "target": "4148b51b"
+        },
+        {
+            "source": "c7b426b9",
+            "target": "24cd6d97"
+        },
+        {
+            "source": "7b2c6e04",
+            "target": "db54c3c7"
+        },
+        {
+            "source": "f274243a",
+            "target": "966b9734"
+        },
+        {
+            "source": "f1f1425b",
+            "target": "4bd20678"
+        },
+        {
+            "source": "f1f1425b",
+            "target": "c7b426b9"
+        },
+        {
+            "source": "db54c3c7",
+            "target": "23c94afb"
+        },
+        {
+            "source": "b61e53b3",
+            "target": "6320b85b"
+        },
+        {
+            "source": "f1f1425b",
+            "target": "filtered"
+        },
+        {
+            "source": "f1387bb8",
+            "target": "2d4f7691"
+        },
+        {
+            "source": "f1a8b59d",
+            "target": "0ac69a3e"
+        },
+        {
+            "source": "23c94afb",
+            "target": "pipeline_1"
+        },
+        {
+            "source": "23c94afb",
+            "target": "pipeline_0"
+        },
+        {
+            "source": "dd637447",
+            "target": "f1387bb8"
+        },
+        {
+            "source": "10d78e97",
+            "target": "8abdd604"
+        },
+        {
+            "source": "b10be219",
+            "target": "14f415c0"
+        },
+        {
+            "source": "872981f9",
+            "target": "f274243a"
+        },
+        {
+            "source": "pipeline_1",
+            "target": "3d7991b0"
+        },
+        {
+            "source": "dd637447",
+            "target": "75432162"
+        },
+        {
+            "source": "4bd20678",
+            "target": "b7c150b6"
+        },
+        {
+            "source": "23c94afb",
+            "target": "dd637447"
+        },
+        {
+            "source": "f1f1425b",
+            "target": "00e32b39"
+        },
+        {
+            "source": "pipeline_2",
+            "target": "07609e88"
+        },
+        {
+            "source": "2fd48555",
+            "target": "a28c4a35"
+        },
+        {
+            "source": "94112458",
+            "target": "493ad53a"
+        }
+    ],
+    "layers": [
+        "raw",
+        "intermediate",
+        "primary",
+        "models"
+    ],
+    "modular_pipelines": {
+        "__root__": {
+            "children": [
+                {
+                    "id": "9ca016a8",
+                    "type": "data"
+                },
+                {
+                    "id": "93d834e1",
+                    "type": "data"
+                },
+                {
+                    "id": "493ad53a",
+                    "type": "data"
+                },
+                {
+                    "id": "pipeline_1",
+                    "type": "modularPipeline"
+                },
+                {
+                    "id": "f6d9538c",
+                    "type": "data"
+                },
+                {
+                    "id": "aed46479",
+                    "type": "data"
+                },
+                {
+                    "id": "filtered",
+                    "type": "modularPipeline"
+                },
+                {
+                    "id": "f1f1425b",
+                    "type": "parameters"
+                },
+                {
+                    "id": "7b2c6e04",
+                    "type": "data"
+                },
+                {
+                    "id": "94112458",
+                    "type": "task"
+                },
+                {
+                    "id": "62800318",
+                    "type": "data"
+                },
+                {
+                    "id": "00e32b39",
+                    "type": "task"
+                },
+                {
+                    "id": "15b893f7",
+                    "type": "task"
+                },
+                {
+                    "id": "cae2d1c7",
+                    "type": "data"
+                },
+                {
+                    "id": "6320b85b",
+                    "type": "task"
+                },
+                {
+                    "id": "pipeline_0",
+                    "type": "modularPipeline"
+                },
+                {
+                    "id": "pipeline_2",
+                    "type": "modularPipeline"
+                },
+                {
+                    "id": "c071dac9",
+                    "type": "data"
+                },
+                {
+                    "id": "db54c3c7",
+                    "type": "task"
+                },
+                {
+                    "id": "966b9734",
+                    "type": "data"
+                },
+                {
+                    "id": "acdb05cf",
+                    "type": "task"
+                },
+                {
+                    "id": "872981f9",
+                    "type": "data"
+                },
+                {
+                    "id": "23c94afb",
+                    "type": "data"
+                },
+                {
+                    "id": "f1d596c2",
+                    "type": "data"
+                },
+                {
+                    "id": "f274243a",
+                    "type": "task"
+                },
+                {
+                    "id": "b61e53b3",
+                    "type": "parameters"
+                }
+            ],
+            "id": "__root__",
+            "inputs": [],
+            "name": "Root",
+            "outputs": []
+        },
+        "filtered": {
+            "children": [
+                {
+                    "id": "8abdd604",
+                    "type": "data"
+                },
+                {
+                    "id": "4b38e7c6",
+                    "type": "data"
+                },
+                {
+                    "id": "14b8c17b",
+                    "type": "data"
+                },
+                {
+                    "id": "b42ec17c",
+                    "type": "data"
+                },
+                {
+                    "id": "cb8dc08a",
+                    "type": "task"
+                },
+                {
+                    "id": "10d78e97",
+                    "type": "task"
+                },
+                {
+                    "id": "4148b51b",
+                    "type": "task"
+                },
+                {
+                    "id": "ae99828d",
+                    "type": "data"
+                },
+                {
+                    "id": "ad61c271",
+                    "type": "data"
+                }
+            ],
+            "id": "filtered",
+            "inputs": [
+                "f1f1425b",
+                "62800318"
+            ],
+            "name": "Filtered",
+            "outputs": [
+                "14b8c17b"
+            ]
+        },
+        "pipeline_0": {
+            "children": [
+                {
+                    "id": "fc7e2889",
+                    "type": "data"
+                },
+                {
+                    "id": "abfb1c03",
+                    "type": "data"
+                },
+                {
+                    "id": "0ac69a3e",
+                    "type": "data"
+                },
+                {
+                    "id": "4bd20678",
+                    "type": "task"
+                },
+                {
+                    "id": "f1a8b59d",
+                    "type": "task"
+                },
+                {
+                    "id": "2fd48555",
+                    "type": "task"
+                },
+                {
+                    "id": "b7c150b6",
+                    "type": "data"
+                },
+                {
+                    "id": "a28c4a35",
+                    "type": "data"
+                },
+                {
+                    "id": "7e802db4",
+                    "type": "data"
+                }
+            ],
+            "id": "pipeline_0",
+            "inputs": [
+                "f1f1425b",
+                "23c94afb"
+            ],
+            "name": "Pipeline 0",
+            "outputs": [
+                "0ac69a3e"
+            ]
+        },
+        "pipeline_1": {
+            "children": [
+                {
+                    "id": "a431b0bc",
+                    "type": "data"
+                },
+                {
+                    "id": "3d7991b0",
+                    "type": "data"
+                },
+                {
+                    "id": "c7b426b9",
+                    "type": "task"
+                },
+                {
+                    "id": "b10be219",
+                    "type": "data"
+                },
+                {
+                    "id": "e70f7c62",
+                    "type": "task"
+                },
+                {
+                    "id": "14f415c0",
+                    "type": "task"
+                },
+                {
+                    "id": "9c45a98b",
+                    "type": "data"
+                },
+                {
+                    "id": "24cd6d97",
+                    "type": "data"
+                },
+                {
+                    "id": "237a57aa",
+                    "type": "data"
+                }
+            ],
+            "id": "pipeline_1",
+            "inputs": [
+                "f1f1425b",
+                "23c94afb"
+            ],
+            "name": "Pipeline 1",
+            "outputs": [
+                "3d7991b0"
+            ]
+        },
+        "pipeline_2": {
+            "children": [
+                {
+                    "id": "75432162",
+                    "type": "data"
+                },
+                {
+                    "id": "f1387bb8",
+                    "type": "data"
+                },
+                {
+                    "id": "cf3251ed",
+                    "type": "data"
+                },
+                {
+                    "id": "07609e88",
+                    "type": "data"
+                },
+                {
+                    "id": "373ba6e1",
+                    "type": "task"
+                },
+                {
+                    "id": "f04aacbf",
+                    "type": "data"
+                },
+                {
+                    "id": "dd637447",
+                    "type": "task"
+                },
+                {
+                    "id": "2d4f7691",
+                    "type": "task"
+                },
+                {
+                    "id": "70da5777",
+                    "type": "data"
+                }
+            ],
+            "id": "pipeline_2",
+            "inputs": [
+                "f1f1425b",
+                "23c94afb"
+            ],
+            "name": "Pipeline 2",
+            "outputs": [
+                "07609e88"
+            ]
+        }
+    },
+    "nodes": [
+        {
+            "full_name": "preprocess_shuttles_node",
+            "id": "acdb05cf",
+            "modular_pipelines": [],
+            "name": "Preprocess Shuttles Node",
+            "parameters": {},
+            "pipelines": [
+                "__default__",
+                "unfiltered_pipeline",
+                "filtered_pipeline",
+                "dp"
+            ],
+            "tags": [
+                "selected",
+                "completed"
+            ],
+            "type": "task"
+        },
+        {
+            "dataset_type": "kedro.extras.datasets.pandas.excel_dataset.ExcelDataSet",
+            "full_name": "shuttles",
+            "id": "f1d596c2",
+            "layer": "raw",
+            "modular_pipelines": [],
+            "name": "Shuttles",
+            "pipelines": [
+                "__default__",
+                "unfiltered_pipeline",
+                "filtered_pipeline",
+                "dp"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "dataset_type": "kedro.extras.datasets.pandas.csv_dataset.CSVDataSet",
+            "full_name": "preprocessed_shuttles",
+            "id": "c071dac9",
+            "layer": "intermediate",
+            "modular_pipelines": [],
+            "name": "Preprocessed Shuttles",
+            "pipelines": [
+                "__default__",
+                "unfiltered_pipeline",
+                "filtered_pipeline",
+                "dp"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "full_name": "preprocess_companies_node",
+            "id": "94112458",
+            "modular_pipelines": [],
+            "name": "Preprocess Companies Node",
+            "parameters": {},
+            "pipelines": [
+                "__default__",
+                "unfiltered_pipeline",
+                "filtered_pipeline",
+                "dp"
+            ],
+            "tags": [
+                "balh",
+                "selected",
+                "completed"
+            ],
+            "type": "task"
+        },
+        {
+            "dataset_type": "kedro.extras.datasets.pandas.csv_dataset.CSVDataSet",
+            "full_name": "companies",
+            "id": "aed46479",
+            "layer": "raw",
+            "modular_pipelines": [],
+            "name": "Companies",
+            "pipelines": [
+                "__default__",
+                "unfiltered_pipeline",
+                "filtered_pipeline",
+                "dp"
+            ],
+            "tags": [
+                "balh"
+            ],
+            "type": "data"
+        },
+        {
+            "dataset_type": "kedro.extras.datasets.pandas.csv_dataset.CSVDataSet",
+            "full_name": "preprocessed_companies",
+            "id": "493ad53a",
+            "layer": "intermediate",
+            "modular_pipelines": [],
+            "name": "Preprocessed Companies",
+            "pipelines": [
+                "__default__",
+                "unfiltered_pipeline",
+                "filtered_pipeline",
+                "dp"
+            ],
+            "tags": [
+                "balh"
+            ],
+            "type": "data"
+        },
+        {
+            "full_name": "create_model_input_table_node",
+            "id": "db54c3c7",
+            "modular_pipelines": [],
+            "name": "Create Model Input Table Node",
+            "parameters": {},
+            "pipelines": [
+                "__default__",
+                "unfiltered_pipeline",
+                "filtered_pipeline",
+                "dp"
+            ],
+            "tags": [
+                "selected",
+                "completed"
+            ],
+            "type": "task"
+        },
+        {
+            "dataset_type": "kedro.extras.datasets.pandas.csv_dataset.CSVDataSet",
+            "full_name": "reviews",
+            "id": "7b2c6e04",
+            "layer": "raw",
+            "modular_pipelines": [],
+            "name": "Reviews",
+            "pipelines": [
+                "__default__",
+                "unfiltered_pipeline",
+                "filtered_pipeline",
+                "dp"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "dataset_type": "kedro.extras.datasets.pandas.csv_dataset.CSVDataSet",
+            "full_name": "model_input_table",
+            "id": "23c94afb",
+            "layer": "primary",
+            "modular_pipelines": [],
+            "name": "Model Input Table",
+            "pipelines": [
+                "__default__",
+                "ds",
+                "unfiltered_pipeline",
+                "dp",
+                "filtered_pipeline"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "full_name": "split_data_node",
+            "id": "c7b426b9",
+            "modular_pipelines": [
+                "pipeline_1"
+            ],
+            "name": "Split Data Node",
+            "parameters": {
+                "features": [
+                    "engines",
+                    "passenger_capacity",
+                    "crew",
+                    "d_check_complete",
+                    "moon_clearance_complete",
+                    "iata_approved",
+                    "company_rating",
+                    "review_scores_rating"
+                ],
+                "filter": {
+                    "column": "engine_type",
+                    "value": "Quantum"
+                },
+                "random_state": 3,
+                "test_size": 0.2
+            },
+            "pipelines": [
+                "__default__"
+            ],
+            "tags": [
+                "selected",
+                "completed"
+            ],
+            "type": "task"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "parameters",
+            "id": "f1f1425b",
+            "layer": null,
+            "modular_pipelines": [],
+            "name": "Parameters",
+            "pipelines": [
+                "__default__",
+                "unfiltered_pipeline",
+                "filtered_pipeline",
+                "ds"
+            ],
+            "tags": [],
+            "type": "parameters"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "pipeline_1.X_train",
+            "id": "9c45a98b",
+            "layer": null,
+            "modular_pipelines": [
+                "pipeline_1"
+            ],
+            "name": "X Train",
+            "pipelines": [
+                "__default__"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "pipeline_1.X_test",
+            "id": "237a57aa",
+            "layer": null,
+            "modular_pipelines": [
+                "pipeline_1"
+            ],
+            "name": "X Test",
+            "pipelines": [
+                "__default__"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "pipeline_1.y_train",
+            "id": "24cd6d97",
+            "layer": null,
+            "modular_pipelines": [
+                "pipeline_1"
+            ],
+            "name": "Y Train",
+            "pipelines": [
+                "__default__"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "pipeline_1.y_test",
+            "id": "b10be219",
+            "layer": null,
+            "modular_pipelines": [
+                "pipeline_1"
+            ],
+            "name": "Y Test",
+            "pipelines": [
+                "__default__"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "full_name": "split_data_node",
+            "id": "4bd20678",
+            "modular_pipelines": [
+                "pipeline_0"
+            ],
+            "name": "Split Data Node",
+            "parameters": {
+                "features": [
+                    "engines",
+                    "passenger_capacity",
+                    "crew",
+                    "d_check_complete",
+                    "moon_clearance_complete",
+                    "iata_approved",
+                    "company_rating",
+                    "review_scores_rating"
+                ],
+                "filter": {
+                    "column": "engine_type",
+                    "value": "Quantum"
+                },
+                "random_state": 3,
+                "test_size": 0.2
+            },
+            "pipelines": [
+                "__default__"
+            ],
+            "tags": [
+                "selected",
+                "completed"
+            ],
+            "type": "task"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "pipeline_0.X_train",
+            "id": "b7c150b6",
+            "layer": null,
+            "modular_pipelines": [
+                "pipeline_0"
+            ],
+            "name": "X Train",
+            "pipelines": [
+                "__default__"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "pipeline_0.X_test",
+            "id": "fc7e2889",
+            "layer": null,
+            "modular_pipelines": [
+                "pipeline_0"
+            ],
+            "name": "X Test",
+            "pipelines": [
+                "__default__"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "pipeline_0.y_train",
+            "id": "abfb1c03",
+            "layer": null,
+            "modular_pipelines": [
+                "pipeline_0"
+            ],
+            "name": "Y Train",
+            "pipelines": [
+                "__default__"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "pipeline_0.y_test",
+            "id": "7e802db4",
+            "layer": null,
+            "modular_pipelines": [
+                "pipeline_0"
+            ],
+            "name": "Y Test",
+            "pipelines": [
+                "__default__"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "full_name": "Filter Data",
+            "id": "6320b85b",
+            "modular_pipelines": [],
+            "name": "Filter Data",
+            "parameters": {
+                "filter": {
+                    "column": "engine_type",
+                    "value": "Quantum"
+                }
+            },
+            "pipelines": [
+                "__default__",
+                "filtered_pipeline"
+            ],
+            "tags": [],
+            "type": "task"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "params:filter",
+            "id": "b61e53b3",
+            "layer": null,
+            "modular_pipelines": [],
+            "name": "Params: Filter",
+            "pipelines": [
+                "__default__",
+                "filtered_pipeline"
+            ],
+            "tags": [],
+            "type": "parameters"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "filtered_model_input_table",
+            "id": "62800318",
+            "layer": null,
+            "modular_pipelines": [],
+            "name": "Filtered Model Input Table",
+            "pipelines": [
+                "__default__",
+                "filtered_pipeline"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "full_name": "split_data_node",
+            "id": "00e32b39",
+            "modular_pipelines": [],
+            "name": "Split Data Node",
+            "parameters": {
+                "features": [
+                    "engines",
+                    "passenger_capacity",
+                    "crew",
+                    "d_check_complete",
+                    "moon_clearance_complete",
+                    "iata_approved",
+                    "company_rating",
+                    "review_scores_rating"
+                ],
+                "filter": {
+                    "column": "engine_type",
+                    "value": "Quantum"
+                },
+                "random_state": 3,
+                "test_size": 0.2
+            },
+            "pipelines": [
+                "__default__",
+                "unfiltered_pipeline",
+                "ds"
+            ],
+            "tags": [
+                "selected",
+                "completed"
+            ],
+            "type": "task"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "X_train",
+            "id": "cae2d1c7",
+            "layer": null,
+            "modular_pipelines": [],
+            "name": "X Train",
+            "pipelines": [
+                "__default__",
+                "unfiltered_pipeline",
+                "ds"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "X_test",
+            "id": "872981f9",
+            "layer": null,
+            "modular_pipelines": [],
+            "name": "X Test",
+            "pipelines": [
+                "__default__",
+                "unfiltered_pipeline",
+                "ds"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "y_train",
+            "id": "9ca016a8",
+            "layer": null,
+            "modular_pipelines": [],
+            "name": "Y Train",
+            "pipelines": [
+                "__default__",
+                "unfiltered_pipeline",
+                "ds"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "y_test",
+            "id": "f6d9538c",
+            "layer": null,
+            "modular_pipelines": [],
+            "name": "Y Test",
+            "pipelines": [
+                "__default__",
+                "unfiltered_pipeline",
+                "ds"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "full_name": "split_data_node",
+            "id": "dd637447",
+            "modular_pipelines": [
+                "pipeline_2"
+            ],
+            "name": "Split Data Node",
+            "parameters": {
+                "features": [
+                    "engines",
+                    "passenger_capacity",
+                    "crew",
+                    "d_check_complete",
+                    "moon_clearance_complete",
+                    "iata_approved",
+                    "company_rating",
+                    "review_scores_rating"
+                ],
+                "filter": {
+                    "column": "engine_type",
+                    "value": "Quantum"
+                },
+                "random_state": 3,
+                "test_size": 0.2
+            },
+            "pipelines": [
+                "__default__"
+            ],
+            "tags": [
+                "selected",
+                "completed"
+            ],
+            "type": "task"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "pipeline_2.X_train",
+            "id": "f04aacbf",
+            "layer": null,
+            "modular_pipelines": [
+                "pipeline_2"
+            ],
+            "name": "X Train",
+            "pipelines": [
+                "__default__"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "pipeline_2.X_test",
+            "id": "75432162",
+            "layer": null,
+            "modular_pipelines": [
+                "pipeline_2"
+            ],
+            "name": "X Test",
+            "pipelines": [
+                "__default__"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "pipeline_2.y_train",
+            "id": "f1387bb8",
+            "layer": null,
+            "modular_pipelines": [
+                "pipeline_2"
+            ],
+            "name": "Y Train",
+            "pipelines": [
+                "__default__"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "pipeline_2.y_test",
+            "id": "70da5777",
+            "layer": null,
+            "modular_pipelines": [
+                "pipeline_2"
+            ],
+            "name": "Y Test",
+            "pipelines": [
+                "__default__"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "full_name": "train_model_node",
+            "id": "2d4f7691",
+            "modular_pipelines": [
+                "pipeline_2"
+            ],
+            "name": "Train Model Node",
+            "parameters": {},
+            "pipelines": [
+                "__default__"
+            ],
+            "tags": [
+                "selected",
+                "completed"
+            ],
+            "type": "task"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "pipeline_2.regressor",
+            "id": "cf3251ed",
+            "layer": null,
+            "modular_pipelines": [
+                "pipeline_2"
+            ],
+            "name": "Regressor",
+            "pipelines": [
+                "__default__"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "full_name": "train_model_node",
+            "id": "e70f7c62",
+            "modular_pipelines": [
+                "pipeline_1"
+            ],
+            "name": "Train Model Node",
+            "parameters": {},
+            "pipelines": [
+                "__default__"
+            ],
+            "tags": [
+                "selected",
+                "completed"
+            ],
+            "type": "task"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "pipeline_1.regressor",
+            "id": "a431b0bc",
+            "layer": null,
+            "modular_pipelines": [
+                "pipeline_1"
+            ],
+            "name": "Regressor",
+            "pipelines": [
+                "__default__"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "full_name": "split_data_node",
+            "id": "10d78e97",
+            "modular_pipelines": [
+                "filtered"
+            ],
+            "name": "Split Data Node",
+            "parameters": {
+                "features": [
+                    "engines",
+                    "passenger_capacity",
+                    "crew",
+                    "d_check_complete",
+                    "moon_clearance_complete",
+                    "iata_approved",
+                    "company_rating",
+                    "review_scores_rating"
+                ],
+                "filter": {
+                    "column": "engine_type",
+                    "value": "Quantum"
+                },
+                "random_state": 3,
+                "test_size": 0.2
+            },
+            "pipelines": [
+                "__default__",
+                "filtered_pipeline"
+            ],
+            "tags": [
+                "selected",
+                "completed"
+            ],
+            "type": "task"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "filtered.X_train",
+            "id": "ae99828d",
+            "layer": null,
+            "modular_pipelines": [
+                "filtered"
+            ],
+            "name": "X Train",
+            "pipelines": [
+                "__default__",
+                "filtered_pipeline"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "filtered.X_test",
+            "id": "8abdd604",
+            "layer": null,
+            "modular_pipelines": [
+                "filtered"
+            ],
+            "name": "X Test",
+            "pipelines": [
+                "__default__",
+                "filtered_pipeline"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "filtered.y_train",
+            "id": "b42ec17c",
+            "layer": null,
+            "modular_pipelines": [
+                "filtered"
+            ],
+            "name": "Y Train",
+            "pipelines": [
+                "__default__",
+                "filtered_pipeline"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "filtered.y_test",
+            "id": "4b38e7c6",
+            "layer": null,
+            "modular_pipelines": [
+                "filtered"
+            ],
+            "name": "Y Test",
+            "pipelines": [
+                "__default__",
+                "filtered_pipeline"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "full_name": "train_model_node",
+            "id": "2fd48555",
+            "modular_pipelines": [
+                "pipeline_0"
+            ],
+            "name": "Train Model Node",
+            "parameters": {},
+            "pipelines": [
+                "__default__"
+            ],
+            "tags": [
+                "selected",
+                "completed"
+            ],
+            "type": "task"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "pipeline_0.regressor",
+            "id": "a28c4a35",
+            "layer": null,
+            "modular_pipelines": [
+                "pipeline_0"
+            ],
+            "name": "Regressor",
+            "pipelines": [
+                "__default__"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "full_name": "train_model_node",
+            "id": "15b893f7",
+            "modular_pipelines": [],
+            "name": "Train Model Node",
+            "parameters": {},
+            "pipelines": [
+                "__default__",
+                "unfiltered_pipeline",
+                "ds"
+            ],
+            "tags": [
+                "selected",
+                "completed"
+            ],
+            "type": "task"
+        },
+        {
+            "dataset_type": "kedro.extras.datasets.pickle.pickle_dataset.PickleDataSet",
+            "full_name": "regressor",
+            "id": "93d834e1",
+            "layer": "models",
+            "modular_pipelines": [],
+            "name": "Regressor",
+            "pipelines": [
+                "__default__",
+                "unfiltered_pipeline",
+                "ds"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "full_name": "evaluate_model_node",
+            "id": "f274243a",
+            "modular_pipelines": [],
+            "name": "Evaluate Model Node",
+            "parameters": {},
+            "pipelines": [
+                "__default__",
+                "unfiltered_pipeline",
+                "ds"
+            ],
+            "tags": [
+                "selected",
+                "completed"
+            ],
+            "type": "task"
+        },
+        {
+            "dataset_type": "kedro.extras.datasets.tracking.metrics_dataset.MetricsDataSet",
+            "full_name": "metrics",
+            "id": "966b9734",
+            "layer": null,
+            "modular_pipelines": [],
+            "name": "Metrics",
+            "pipelines": [
+                "__default__",
+                "unfiltered_pipeline",
+                "ds"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "full_name": "evaluate_model_node",
+            "id": "373ba6e1",
+            "modular_pipelines": [
+                "pipeline_2"
+            ],
+            "name": "Evaluate Model Node",
+            "parameters": {},
+            "pipelines": [
+                "__default__"
+            ],
+            "tags": [
+                "selected",
+                "completed"
+            ],
+            "type": "task"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "pipeline_2.metrics",
+            "id": "07609e88",
+            "layer": null,
+            "modular_pipelines": [
+                "pipeline_2"
+            ],
+            "name": "Metrics",
+            "pipelines": [
+                "__default__"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "full_name": "train_model_node",
+            "id": "cb8dc08a",
+            "modular_pipelines": [
+                "filtered"
+            ],
+            "name": "Train Model Node",
+            "parameters": {},
+            "pipelines": [
+                "__default__",
+                "filtered_pipeline"
+            ],
+            "tags": [
+                "selected",
+                "completed"
+            ],
+            "type": "task"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "filtered.regressor",
+            "id": "ad61c271",
+            "layer": null,
+            "modular_pipelines": [
+                "filtered"
+            ],
+            "name": "Regressor",
+            "pipelines": [
+                "__default__",
+                "filtered_pipeline"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "full_name": "evaluate_model_node",
+            "id": "f1a8b59d",
+            "modular_pipelines": [
+                "pipeline_0"
+            ],
+            "name": "Evaluate Model Node",
+            "parameters": {},
+            "pipelines": [
+                "__default__"
+            ],
+            "tags": [
+                "selected",
+                "completed"
+            ],
+            "type": "task"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "pipeline_0.metrics",
+            "id": "0ac69a3e",
+            "layer": null,
+            "modular_pipelines": [
+                "pipeline_0"
+            ],
+            "name": "Metrics",
+            "pipelines": [
+                "__default__"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "full_name": "evaluate_model_node",
+            "id": "14f415c0",
+            "modular_pipelines": [
+                "pipeline_1"
+            ],
+            "name": "Evaluate Model Node",
+            "parameters": {},
+            "pipelines": [
+                "__default__"
+            ],
+            "tags": [
+                "selected",
+                "completed"
+            ],
+            "type": "task"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "pipeline_1.metrics",
+            "id": "3d7991b0",
+            "layer": null,
+            "modular_pipelines": [
+                "pipeline_1"
+            ],
+            "name": "Metrics",
+            "pipelines": [
+                "__default__"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "full_name": "evaluate_model_node",
+            "id": "4148b51b",
+            "modular_pipelines": [
+                "filtered"
+            ],
+            "name": "Evaluate Model Node",
+            "parameters": {},
+            "pipelines": [
+                "__default__",
+                "filtered_pipeline"
+            ],
+            "tags": [
+                "selected",
+                "completed"
+            ],
+            "type": "task"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "filtered.metrics",
+            "id": "14b8c17b",
+            "layer": null,
+            "modular_pipelines": [
+                "filtered"
+            ],
+            "name": "Metrics",
+            "pipelines": [
+                "__default__",
+                "filtered_pipeline"
+            ],
+            "tags": [],
+            "type": "data"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "pipeline_1",
+            "id": "pipeline_1",
+            "layer": null,
+            "modular_pipelines": null,
+            "name": "Pipeline 1",
+            "pipelines": [
+                "__default__"
+            ],
+            "tags": [],
+            "type": "modularPipeline"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "pipeline_0",
+            "id": "pipeline_0",
+            "layer": null,
+            "modular_pipelines": null,
+            "name": "Pipeline 0",
+            "pipelines": [
+                "__default__"
+            ],
+            "tags": [],
+            "type": "modularPipeline"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "pipeline_2",
+            "id": "pipeline_2",
+            "layer": null,
+            "modular_pipelines": null,
+            "name": "Pipeline 2",
+            "pipelines": [
+                "__default__"
+            ],
+            "tags": [],
+            "type": "modularPipeline"
+        },
+        {
+            "dataset_type": null,
+            "full_name": "filtered",
+            "id": "filtered",
+            "layer": null,
+            "modular_pipelines": null,
+            "name": "Filtered",
+            "pipelines": [
+                "__default__",
+                "filtered_pipeline"
+            ],
+            "tags": [],
+            "type": "modularPipeline"
+        }
+    ],
+    "pipelines": [
+        {
+            "id": "__default__",
+            "name": "Default"
+        },
+        {
+            "id": "filtered_pipeline",
+            "name": "Filtered Pipeline"
+        },
+        {
+            "id": "unfiltered_pipeline",
+            "name": "Unfiltered Pipeline"
+        },
+        {
+            "id": "dp",
+            "name": "Dp"
+        },
+        {
+            "id": "ds",
+            "name": "Ds"
+        }
+    ],
+    "selected_pipeline": "__default__",
+    "tags": [
+        {
+            "id": "selected",
+            "name": "Selected"
+        },
+        {
+            "id": "completed",
+            "name": "Completed"
+        },
+        {
+            "id": "balh",
+            "name": "Balh"
+        }
+    ]
+}

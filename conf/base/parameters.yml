@@ -9,3 +9,7 @@ features:
   - iata_approved
   - company_rating
   - review_scores_rating
+
+filter:
+  column: engine_type
+  value: Quantum
