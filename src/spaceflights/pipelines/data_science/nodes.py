@@ -26,6 +26,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 import logging
+import random
 from typing import Dict, Tuple
 
 import pandas as pd
@@ -78,4 +79,4 @@ def evaluate_model(
     """
     y_pred = regressor.predict(X_test)
     score = r2_score(y_test, y_pred)
-    return {"accuracy": 0.9}
+    return {"accuracy": random.random()}

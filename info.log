@@ -212,3 +212,12 @@
 2021-10-28 12:33:01,042 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
 2021-10-28 12:33:01,062 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
 2021-10-28 12:33:01,506 - kedro.framework.session.store - INFO - `read()` not implemented for `SQLiteStore`. Assuming empty store.
+2021-10-28 12:35:37,504 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 12:35:37,523 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 12:35:37,955 - kedro.framework.session.store - INFO - `read()` not implemented for `SQLiteStore`. Assuming empty store.
+2021-10-28 12:35:45,694 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 12:35:45,714 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 12:35:46,183 - kedro.framework.session.store - INFO - `read()` not implemented for `SQLiteStore`. Assuming empty store.
+2021-10-28 12:36:01,363 - root - INFO - Registered hooks from 1 installed plugin(s): kedro-time-machine-0.1
+2021-10-28 12:36:01,386 - root - INFO - Registered CLI hooks from 1 installed plugin(s): kedro-telemetry-0.1.2
+2021-10-28 12:36:02,043 - kedro.framework.session.store - INFO - `read()` not implemented for `SQLiteStore`. Assuming empty store.
